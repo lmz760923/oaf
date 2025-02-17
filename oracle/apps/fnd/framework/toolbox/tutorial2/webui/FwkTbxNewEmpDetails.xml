@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!--  dbdrv: exec java oracle/jrad/tools/xml/importer XMLImporter.class java &phase=dat+24 checkfile:~PROD:~PATH:~FILE &fullpath:~PROD:~PATH:~FILE -username &un_apps -password &pw_apps -dbconnection &jdbc_db_addr -userId "1" -rootPackage /oracle/apps/~PROD -rootdir &fullpath:~PROD:mds:directory--> 
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header: FwkTbxNewEmpDetails.xml 120.0.12020000.1 2020/01/10 12:25:21 spunam noship $">
+   <content>
+      <oa:pageLayout id="PageLayoutRN" amDefName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmployeeAM" windowTitle="Enhancement Project" title="Miscellaneous Details" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial2.webui.MasonryLayoutCO">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:masonryLayout id="MasonryLayoutRN" layoutCols="12" layoutRows="7">
+               <ui:contents>
+                  <oa:masonryTile id="trendsAndAnalyticsMT">
+                     <ui:contents>
+                        <oa:stackLayout id="trendsAndAnalyticsSL" prompt="Trend and analytics">
+                           <ui:contents>
+                              <oa:image id="trendAndAnalyticsImage" destination="OA.jsp?page=/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewMiscPG&amp;retainAM=Y" prompt="Trend And Analytics" shortDesc="Trend And Analytics" imageHeight="50%" imageWidth="50%" source="monitor_enabled.gif"/>
+                              <oa:messageStyledText id="trendAndAnalyticsText" destination="OA.jsp?page=/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewMiscPG&amp;retainAM=Y" prompt="Trend And Analytics" shortDesc="Trend And Analytics"/>
+                           </ui:contents>
+                        </oa:stackLayout>
+                     </ui:contents>
+                  </oa:masonryTile>
+                  <oa:masonryTile id="updateProfileMT">
+                     <ui:contents>
+                        <oa:stackLayout id="updateProfileSL" prompt="Update Profile">
+                           <ui:contents>
+                              <oa:image id="updateProfileImage" prompt="Update Profile" shortDesc="Update Profile" source="configure_enabled.gif" imageHeight="50%" imageWidth="50%" destination="OA.jsp?page=/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewEmpUpdProfilePG&amp;retainAM=Y"/>
+                              <oa:messageStyledText id="updateProfileText" prompt="Update Profile" shortDesc="Update Profile" destination="OA.jsp?page=/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewEmpUpdProfilePG&amp;retainAM=Y"/>
+                           </ui:contents>
+                        </oa:stackLayout>
+                     </ui:contents>
+                  </oa:masonryTile>
+                  <oa:masonryTile id="assetManagementMT">
+                     <ui:contents>
+                        <oa:stackLayout id="assetManagementSL" prompt="Asset Management">
+                           <ui:contents>
+                              <oa:image id="assetManagementImage" prompt="Asset Management" shortDesc="Asset Management" source="viewrelatedassets_enabled.gif" imageHeight="50%" imageWidth="50%" destination="OA.jsp?page=/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewEmpAssetMngPG&amp;retainAM=Y"/>
+                              <oa:messageStyledText id="assetManagementText" prompt="Asset Management" shortDesc="Asset Management" destination="OA.jsp?page=/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewMiscPG&amp;retainAM=Y"/>
+                           </ui:contents>
+                        </oa:stackLayout>
+                     </ui:contents>
+                  </oa:masonryTile>
+                  <oa:masonryTile id="trainingUpdateMT">
+                     <ui:contents>
+                        <oa:stackLayout id="trainingUpdateSL" prompt="Training Update">
+                           <ui:contents>
+                              <oa:image id="trainingUpdateImage" prompt="Training   Update" shortDesc="Training   Update" source="requisitionsreceive_cctitle.gif" imageHeight="50%" imageWidth="50%" destination="OA.jsp?page=/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewTrainingEnrollPG&amp;retainAM=Y"/>
+                              <oa:messageStyledText id="trainingUpdateText" prompt="Training Update" shortDesc="Training Update" destination="OA.jsp?page=/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewTrainingEnrollPG&amp;retainAM=Y"/>
+                           </ui:contents>
+                        </oa:stackLayout>
+                     </ui:contents>
+                  </oa:masonryTile>
+               </ui:contents>
+            </oa:masonryLayout>
+            <oa:pageButtonBar id="pageButtonBar">
+               <ui:contents>
+                  <oa:button id="backBtn" text="Return to Employee Search Page" prompt="Return to Employee Search Page" destination="OA.jsp?page=/oracle/apps/fnd/framework/toolbox/tutorial2/webui/EmployeeSearchPG" shortDesc="Return to Employee Search Page"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

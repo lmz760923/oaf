@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="pagelayout" amDefName="oracle.apps.fnd.framework.toolbox.tutorial.server.InvoiceAM" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial.webui.InvoiceCO">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:header id="query">
+               <ui:contents>
+                  <oa:messageComponentLayout id="inputs" columns="2">
+                     <ui:contents>
+                        <oa:messageTextInput id="invoice_number" prompt="Invoice Number"/>
+                        <oa:messageTextInput id="supplier_id" dataType="NUMBER" prompt="Invoice ID"/>
+                     </ui:contents>
+                  </oa:messageComponentLayout>
+               </ui:contents>
+            </oa:header>
+            <oa:header id="result">
+               <ui:contents>
+                  <oa:advancedTable id="table" viewName="InvoiceVO1" width="100%" alternateText="no data">
+                     <ui:contents>
+                        <oa:column id="column1">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader1" prompt="Invoice ID"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageTextInput id="INVOICE_ID" dataType="NUMBER" viewAttr="InvoiceId" prompt="INVOICE_ID"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="column2">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader2" prompt="Vendor ID"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageTextInput id="VENDOR_ID" prompt="VENDOR_ID" viewAttr="VendorId"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="column3">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader3" prompt="Invoice Number"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageTextInput id="INVOICE_NUM" required="yes" viewAttr="InvoiceNum"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="column4">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader4" prompt="Set ID"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageTextInput id="SET_OF_BOOKS_ID" required="yes" prompt="SET_OF_BOOKS_ID" viewAttr="SetOfBooksId"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="column5">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader5" prompt="Payment CURR"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageTextInput id="PAYMENT_CURRENCY_CODE" required="yes" viewAttr="PaymentCurrencyCode" prompt="PAYMENT_CURRENCY_CODE"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="column6">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader6" prompt="Pay rate"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageTextInput id="PAYMENT_CROSS_RATE" required="yes" prompt="PAYMENT_CROSS_RATE" viewAttr="PaymentCrossRate"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="column7">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader7" prompt="Invoice Amount"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageTextInput id="INVOICE_AMOUNT" viewAttr="InvoiceAmount" prompt="INVOICE_AMOUNT"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="column8">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader8" prompt="GL date"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageTextInput id="GL_DATE" required="yes" viewAttr="GlDate" prompt="GL_DATE" dataType="DATE"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="column9">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader9" prompt="Org ID"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageTextInput id="ORG_ID" viewAttr="OrgId" prompt="ORG_ID" dataType="NUMBER"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="column10">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader10" prompt="attachment"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:stackLayout id="region1">
+                                 <ui:contents>
+                                    <oa:attachmentLink id="item1">
+                                       <oa:entityMappings>
+                                          <oa:entityMap id="entityMap1" entityId="AP_INVOICES">
+                                             <oa:primaryKeys>
+                                                <oa:primaryKey id="primaryKey1" viewAttr="InvoiceId"/>
+                                             </oa:primaryKeys>
+                                             <oa:categoryMappings>
+                                                <oa:categoryMap id="categoryMap1" categoryName="FromSupplier"/>
+                                             </oa:categoryMappings>
+                                          </oa:entityMap>
+                                       </oa:entityMappings>
+                                    </oa:attachmentLink>
+                                 </ui:contents>
+                              </oa:stackLayout>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="column11">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="sortableHeader11" prompt="DESC"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:flex id="desc" prompt="FLEX" flexFieldAppShortName="SQLAP" flexName="AP_INVOICES"/>
+                           </ui:contents>
+                        </oa:column>
+                     </ui:contents>
+                  </oa:advancedTable>
+               </ui:contents>
+            </oa:header>
+            <oa:pageButtonBar id="pagebuttons">
+               <ui:contents>
+                  <oa:submitButton id="find" text="find" prompt="find"/>
+                  <oa:submitButton id="add" text="add" prompt="add"/>
+                  <oa:submitButton id="save" text="save" prompt="save"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

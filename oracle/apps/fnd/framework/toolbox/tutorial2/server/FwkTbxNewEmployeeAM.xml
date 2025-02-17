@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: FwkTbxNewEmployeeAM.xml 120.0.12020000.1 2020/01/08 05:47:23 spunam noship $ -->
+
+<AppModule
+   Name="FwkTbxNewEmployeeAM"
+   ComponentClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmployeeAMImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_deployType" Value="0" />
+   </DesignTime>
+   <ViewUsage
+      Name="FwkTbxNewEducationVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEducationVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmpAddrVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAddrVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmployeeVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmployeeVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewExperienceVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmpTrainingVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewSkillRatingVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewSkillRatingVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmployeeSearchVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmployeeSearchVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmpDistVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpDistVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmpTrainingChartVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingChartVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmpTrendGraphVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrendGraphVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmpSkillsVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkillsVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmpDetVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpDetVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmpTrendGraph3VO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrendGraph3VO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewSkillsVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewSkillsVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmpSkillsDetVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkillsDetVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewAssetVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewAssetVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmpTypeVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTypeVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmpTitleVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTitleVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewTrainingVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewTrainingVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmpEnrollTrainingVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpEnrollTrainingVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmpAssetInfoChartVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAssetInfoChartVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmpSpecificAssetInfoChartVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSpecificAssetInfoChartVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewGenericEmpTrainingChartVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewGenericEmpTrainingChartVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxEmployeeHgridVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxEmployeeHgridVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="FwkTbxNewEmpAssetCcVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAssetCcVO" >
+   </ViewUsage>
+</AppModule>

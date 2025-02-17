@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: FwkTbxNewEMployeeEO.xml 120.0.12020000.1 2020/01/08 05:53:19 spunam noship $ -->
+
+<Entity
+   Name="FwkTbxNewEMployeeEO"
+   DBObjectType="table"
+   DBObjectName="FWK_TBX_NEW_EMPLOYEE"
+   AliasName="FwkTbxNewEMployeeEO"
+   BindingStyle="OracleName"
+   UseGlueCode="false"
+   RowClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEMployeeEOImpl"
+   DefClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEMployeeEODefImpl"
+   CollClass="oracle.apps.fnd.framework.server.OAEntityCache" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+      <Attr Name="_codeGenFlag2" Value="Init|Delete|Access|DML|Def|Val" />
+   </DesignTime>
+   <Attribute
+      Name="EmployeeId"
+      IsUpdateable="while_insert"
+      IsNotNull="true"
+      ColumnName="EMPLOYEE_ID"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="FWK_TBX_NEW_EMPLOYEE"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Title"
+      Precision="30"
+      ColumnName="TITLE"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="30" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="FirstName"
+      Precision="20"
+      ColumnName="FIRST_NAME"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="20" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="MiddleNames"
+      Precision="60"
+      ColumnName="MIDDLE_NAMES"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="60" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="LastName"
+      Precision="40"
+      ColumnName="LAST_NAME"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="40" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="FullName"
+      Precision="240"
+      ColumnName="FULL_NAME"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="240" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="EmailAddress"
+      Precision="240"
+      ColumnName="EMAIL_ADDRESS"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="240" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Guid"
+      IsNotNull="true"
+      Precision="10"
+      ColumnName="GUID"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="10" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="ManagerId"
+      ColumnName="MANAGER_ID"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="PositionCode"
+      Precision="30"
+      ColumnName="POSITION_CODE"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="30" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Salary"
+      ColumnName="SALARY"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="StartDate"
+      ColumnName="START_DATE"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      SQLType="TIMESTAMP"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="EndDate"
+      ColumnName="END_DATE"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      SQLType="TIMESTAMP"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="LastUpdateDate"
+      IsNotNull="true"
+      ColumnName="LAST_UPDATE_DATE"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      SQLType="TIMESTAMP"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="LastUpdatedBy"
+      IsNotNull="true"
+      ColumnName="LAST_UPDATED_BY"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CreationDate"
+      IsNotNull="true"
+      ColumnName="CREATION_DATE"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      SQLType="TIMESTAMP"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CreatedBy"
+      IsNotNull="true"
+      ColumnName="CREATED_BY"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="LastUpdateLogin"
+      ColumnName="LAST_UPDATE_LOGIN"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="EmpPhoto"
+      IsQueriable="false"
+      ColumnName="EMP_PHOTO"
+      Type="oracle.jbo.domain.BlobDomain"
+      ColumnType="BLOB"
+      SQLType="BLOB"
+      TableName="FWK_TBX_NEW_EMPLOYEE" >
+   </Attribute>
+   <AccessorAttribute
+      Name="FwkTbxNewEmpAddressEO"
+      Association="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAddrEmpidFkAssoc"
+      AssociationEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAddrEmpidFkAssoc.FwkTbxNewEmpAddressEO"
+      AssociationOtherEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAddrEmpidFkAssoc.FwkTbxNewEMployeeEO"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="FwkTbxNewEmpSkillsEO"
+      Association="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkilEmpidFkAssoc"
+      AssociationEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkilEmpidFkAssoc.FwkTbxNewEmpSkillsEO"
+      AssociationOtherEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkilEmpidFkAssoc.FwkTbxNewEMployeeEO"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="FwkTbxNewEmpTrainingsEO"
+      Association="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingFk1Assoc"
+      AssociationEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingFk1Assoc.FwkTbxNewEmpTrainingsEO"
+      AssociationOtherEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingFk1Assoc.FwkTbxNewEMployeeEO"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="FwkTbxNewEducationEO"
+      Association="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEducationFkAssoc"
+      AssociationEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEducationFkAssoc.FwkTbxNewEducationEO"
+      AssociationOtherEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEducationFkAssoc.FwkTbxNewEMployeeEO"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="FwkTbxNewExperienceEO"
+      Association="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceFkAssoc"
+      AssociationEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceFkAssoc.FwkTbxNewExperienceEO"
+      AssociationOtherEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceFkAssoc.FwkTbxNewEMployeeEO"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="FwkTbxNewAssetEO"
+      Association="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewAssetFkAssoc"
+      AssociationEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewAssetFkAssoc.FwkTbxNewAssetEO"
+      AssociationOtherEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewAssetFkAssoc.FwkTbxNewEMployeeEO"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <Key
+      Name="FwkTbxNewEmployeePk" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEMployeeEO.EmployeeId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isPrimary" Value="true" />
+         <Attr Name="_DBObjectName" Value="FWK_TBX_NEW_EMPLOYEE_PK" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC00245746" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEMployeeEO.EmployeeId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_checkCondition" Value="&#34;EMPLOYEE_ID&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+         <Attr Name="_DBObjectName" Value="SYS_C00245746" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC00245747" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEMployeeEO.Guid" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_checkCondition" Value="&#34;GUID&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+         <Attr Name="_DBObjectName" Value="SYS_C00245747" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC00245748" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEMployeeEO.LastUpdateDate" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_checkCondition" Value="&#34;LAST_UPDATE_DATE&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+         <Attr Name="_DBObjectName" Value="SYS_C00245748" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC00245749" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEMployeeEO.LastUpdatedBy" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_checkCondition" Value="&#34;LAST_UPDATED_BY&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+         <Attr Name="_DBObjectName" Value="SYS_C00245749" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC00245750" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEMployeeEO.CreationDate" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_checkCondition" Value="&#34;CREATION_DATE&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+         <Attr Name="_DBObjectName" Value="SYS_C00245750" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC00245751" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEMployeeEO.CreatedBy" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_checkCondition" Value="&#34;CREATED_BY&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+         <Attr Name="_DBObjectName" Value="SYS_C00245751" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC00245816" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEMployeeEO.LastUpdatedBy" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_checkCondition" Value="&#34;LAST_UPDATED_BY&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+         <Attr Name="_DBObjectName" Value="SYS_C00245816" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC00245818" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEMployeeEO.CreatedBy" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_checkCondition" Value="&#34;CREATED_BY&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+         <Attr Name="_DBObjectName" Value="SYS_C00245818" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC00245819" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEMployeeEO.LastUpdateLogin" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_checkCondition" Value="&#34;LAST_UPDATE_LOGIN&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+         <Attr Name="_DBObjectName" Value="SYS_C00245819" />
+      </DesignTime>
+   </Key>
+</Entity>

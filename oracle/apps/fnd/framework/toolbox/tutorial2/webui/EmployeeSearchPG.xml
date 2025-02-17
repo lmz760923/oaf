@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!--  dbdrv: exec java oracle/jrad/tools/xml/importer XMLImporter.class java &phase=dat+24 checkfile:~PROD:~PATH:~FILE &fullpath:~PROD:~PATH:~FILE -username &un_apps -password &pw_apps -dbconnection &jdbc_db_addr -userId "1" -rootPackage /oracle/apps/~PROD -rootdir &fullpath:~PROD:mds:directory-->
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header: EmployeeSearchPG.xml 120.0.12020000.1 2020/01/10 12:42:52 spunam noship $">
+   <content>
+      <oa:pageLayout id="PageLayoutRN" amDefName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmployeeAM" windowTitle="Toolbox Enhancement" title="Employee Search Page" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial2.webui.EmployeeSearchCO">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:query id="QueryRN" mode="resultsBasedSearch" dispSimple="true" dispCustomized="true" dispAdvanced="true" listSearchEnabled="true">
+               <ui:contents>
+                  <oa:advancedTable id="AdvancedTableRN" text="Employees" shortDesc="Employees" userCustomizable="true" blockSize="20" width="100%" viewName="FwkTbxNewEmployeeSearchVO1">
+                     <ui:contents>
+                        <oa:column id="AdvEmployeeIdCol" totalValue="true" userCustomizable="true">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="AdvEmpIdHdr" use="/oracle/apps/fnd/framework/toolbox/attributesets/FwkTbxEmployees/EmployeeId" sortState="yes" userCustomizable="true"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="AdvEmpId" viewAttr="EmployeeId" use="/oracle/apps/fnd/framework/toolbox/attributesets/FwkTbxEmployees/EmployeeId" queryable="true" exportByViewAttr="EmployeeId"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="AdvEmpNameCol" totalValue="true" userCustomizable="true">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="AdvEmpNameHdr" use="/oracle/apps/fnd/framework/toolbox/attributesets/FwkTbxEmployees/FullName" sortState="yes" userCustomizable="true"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="AdvEmpName" use="/oracle/apps/fnd/framework/toolbox/attributesets/FwkTbxEmployees/FullName" viewAttr="FullName" queryable="true" exportByViewAttr="FullName" destination="OA.jsp?page=/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewEmpViewOnlyPG&amp;OAHP=FWK_TBX_NEW_HOME_MENU&amp;OASF=FWK_TBX_NEW_EMPBDETAILS&amp;retainAM=Y&amp;addBreadCrumb=Y&amp;empId={@EmployeeId}"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="AdvEmpEmailCol" userCustomizable="true" totalValue="true">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="AdvEmpEmailHdr" use="/oracle/apps/fnd/framework/toolbox/attributesets/FwkTbxEmployees/EmailAddress" sortState="yes" userCustomizable="true"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="AdvEmpEmail" use="/oracle/apps/fnd/framework/toolbox/attributesets/FwkTbxEmployees/EmailAddress" viewAttr="EmailAddress" exportByViewAttr="EmailAddress"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="AdvEmpPosCol" totalValue="true" userCustomizable="true">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="AdvEmpPosHdr" use="/oracle/apps/fnd/framework/toolbox/attributesets/FwkTbxEmployees/Position" sortState="yes" userCustomizable="true"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="AdvEmpPos" use="/oracle/apps/fnd/framework/toolbox/attributesets/FwkTbxEmployees/Position" viewAttr="PositionCode" exportByViewAttr="PositionCode"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="AdvMgrNameCol" totalValue="true">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="AdvMgrNameHdr" use="/oracle/apps/fnd/framework/toolbox/attributesets/FwkTbxEmployees/FullName_Manager" sortState="yes" userCustomizable="true"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="AdvMgrName" use="/oracle/apps/fnd/framework/toolbox/attributesets/FwkTbxEmployees/FullName_Manager" viewAttr="ManagerName" exportByViewAttr="ManagerName"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="AdvEmpGuidCol">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="AdvEmpGuidHdr" sortState="yes" prompt="Guid"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="AdvEmpGuid" viewAttr="Guid" exportByViewAttr="Guid" prompt="Guid" shortDesc="Guid"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="AdvEmpPhoneCol">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="AdvEmpPhoneHdr" prompt="Phone Number"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="AdvEmpPhone" viewAttr="MobileNumber" exportByViewAttr="MobileNumber"/>
+                           </ui:contents>
+                        </oa:column>
+                        <oa:column id="AdvEmpCountryCol">
+                           <ui:columnHeader>
+                              <oa:sortableHeader id="AdvEmpCountryHdr" prompt="Country"/>
+                           </ui:columnHeader>
+                           <ui:contents>
+                              <oa:messageStyledText id="AdvEmpCountry" viewAttr="Country" exportByViewAttr="Country"/>
+                           </ui:contents>
+                        </oa:column>
+                     </ui:contents>
+                     <ui:tableActions>
+                        <oa:flowLayout id="TableActionButtons">
+                           <ui:contents>
+                              <oa:exportButton id="EmpSearchExportBtn" exportAllRows="true" viewName="FwkTbxNewEmployeeSearchVO1" text="Export"/>
+                           </ui:contents>
+                        </oa:flowLayout>
+                     </ui:tableActions>
+                     <ui:tableSelection>
+                        <oa:multipleSelection id="MultipleEmpSelect" text="" viewAttr="SelectFlag">
+                           <ui:contents>
+                              <oa:flowLayout id="MultipleSelectLayout">
+                                 <ui:contents>
+                                    <oa:submitButton id="EmpMailBtn" text="Send Email" prompt="Send Email">
+                                       <ui:primaryClientAction>
+                                          <ui:fireAction event="sendEmail"/>
+                                       </ui:primaryClientAction>
+                                    </oa:submitButton>
+                                 </ui:contents>
+                              </oa:flowLayout>
+                           </ui:contents>
+                        </oa:multipleSelection>
+                     </ui:tableSelection>
+                  </oa:advancedTable>
+               </ui:contents>
+            </oa:query>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

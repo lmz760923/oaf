@@ -1,0 +1,471 @@
+24/12/27 15:47:57.368 10.1.3.5.0 Started
+24/12/27 15:47:59.677 APPS_HTML: 10.1.3.5.0 Started
+24/12/27 15:50:18.64 10.1.3.5.0 Started
+24/12/27 15:50:20.136 APPS_HTML: 10.1.3.5.0 Started
+24/12/27 15:50:43.433 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+24/12/27 15:50:43.433 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+24/12/27 15:50:43.437 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+24/12/27 16:18:13.32 10.1.3.5.0 Started
+24/12/27 16:18:22.491 APPS_HTML: 10.1.3.5.0 Started
+24/12/27 16:18:50.414 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+24/12/27 16:18:50.414 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+24/12/27 16:18:50.419 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+24/12/27 16:44:13.366 10.1.3.5.0 Started
+24/12/27 16:44:15.520 APPS_HTML: 10.1.3.5.0 Started
+24/12/27 16:44:38.563 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+24/12/27 16:44:38.563 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+24/12/27 16:44:38.570 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+24/12/27 16:55:46.816 10.1.3.5.0 Started
+24/12/27 16:55:48.494 APPS_HTML: 10.1.3.5.0 Started
+24/12/27 16:56:11.155 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+24/12/27 16:56:11.155 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+24/12/27 16:56:11.160 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+24/12/31 13:35:25.217 10.1.3.5.0 Started
+24/12/31 13:35:29.935 APPS_HTML: 10.1.3.5.0 Started
+24/12/31 13:36:04.350 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+24/12/31 13:36:04.350 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+24/12/31 13:36:04.354 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+24/12/31 14:35:54.561 10.1.3.5.0 Started
+24/12/31 14:35:57.569 APPS_HTML: 10.1.3.5.0 Started
+24/12/31 14:36:33.323 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+24/12/31 14:36:33.323 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+24/12/31 14:36:33.331 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+24/12/31 14:40:03.246 APPS_HTML: OABodyBean, localName='body': Could not find partial target: Shipping
+24/12/31 14:40:07.256 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+24/12/31 14:40:09.934 APPS_HTML: OABodyBean, localName='body': Could not find partial target: Shipping
+24/12/31 14:40:09.934 APPS_HTML: OABodyBean, localName='body': Could not find partial target: Shipping0_1__35
+24/12/31 14:40:09.934 APPS_HTML: OABodyBean, localName='body': Could not find partial target: Shipping0HiddenFlexId_1__35
+24/12/31 14:40:13.779 APPS_HTML: OABodyBean, localName='body': Could not find partial target: Shipping
+24/12/31 14:40:16.938 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+24/12/31 14:40:19.832 APPS_HTML: OABodyBean, localName='body': Could not find partial target: Shipping
+24/12/31 14:40:19.832 APPS_HTML: OABodyBean, localName='body': Could not find partial target: Shipping2HiddenFlexId_1__35
+24/12/31 14:40:19.832 APPS_HTML: OABodyBean, localName='body': Could not find partial target: Shipping2_1__35
+24/12/31 14:40:22.817 APPS_HTML: OABodyBean, localName='body': Could not find partial target: Shipping
+24/12/31 14:40:25.5 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+24/12/31 14:40:27.310 APPS_HTML: OABodyBean, localName='body': Could not find partial target: Shipping
+24/12/31 14:40:27.310 APPS_HTML: OABodyBean, localName='body': Could not find partial target: Shipping3_1__35
+24/12/31 14:40:27.310 APPS_HTML: OABodyBean, localName='body': Could not find partial target: Shipping3HiddenFlexId_1__35
+24/12/31 14:41:53.650 APPS_HTML: OABodyBean, localName='body': Could not find partial target: Shipping
+24/12/31 14:41:56.88 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+24/12/31 14:41:58.302 APPS_HTML: OABodyBean, localName='body': Could not find partial target: Shipping
+24/12/31 14:41:58.303 APPS_HTML: OABodyBean, localName='body': Could not find partial target: Shipping0HiddenFlexId_0__2
+24/12/31 14:41:58.303 APPS_HTML: OABodyBean, localName='body': Could not find partial target: Shipping0_0__2
+24/12/31 14:42:03.931 APPS_HTML: OABodyBean, localName='body': Could not find partial target: ItemsTable
+24/12/31 15:03:50.713 10.1.3.5.0 Started
+24/12/31 15:03:52.501 APPS_HTML: 10.1.3.5.0 Started
+24/12/31 15:04:18.779 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+24/12/31 15:04:18.779 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+24/12/31 15:04:18.784 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+24/12/31 15:48:15.761 10.1.3.5.0 Started
+24/12/31 15:48:17.525 APPS_HTML: 10.1.3.5.0 Started
+24/12/31 15:48:40.90 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+24/12/31 15:48:40.90 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+24/12/31 15:48:40.95 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+24/12/31 16:19:42.338 APPS_HTML: 10.1.3.5.0 Stopped
+24/12/31 16:19:42.929 10.1.3.5.0 Started
+24/12/31 16:19:44.495 APPS_HTML: 10.1.3.5.0 Started
+24/12/31 16:20:08.701 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+24/12/31 16:20:08.701 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+24/12/31 16:20:08.706 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+24/12/31 16:21:57.952 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+24/12/31 16:23:18.170 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+24/12/31 16:25:17.842 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/03 09:42:49.28 10.1.3.5.0 Started
+25/01/03 09:42:51.498 APPS_HTML: 10.1.3.5.0 Started
+25/01/03 09:43:22.495 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/03 09:43:22.495 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/03 09:43:22.495 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/03 10:00:26.614 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/03 10:00:37.492 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/03 10:00:46.104 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/03 14:55:47.844 APPS_HTML: 10.1.3.5.0 Stopped
+25/01/03 14:55:49.507 10.1.3.5.0 Started
+25/01/03 14:55:52.499 APPS_HTML: 10.1.3.5.0 Started
+25/01/03 14:56:16.340 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/03 14:56:16.340 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/03 14:56:16.356 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/03 14:57:56.760 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/03 14:58:11.864 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/03 14:58:20.812 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/03 15:11:54.61 10.1.3.5.0 Started
+25/01/03 15:11:56.38 APPS_HTML: 10.1.3.5.0 Started
+25/01/03 15:12:17.104 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/03 15:12:17.104 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/03 15:12:17.120 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/03 15:14:20.822 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/03 15:14:31.173 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/03 15:14:38.497 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/03 15:23:02.206 APPS_HTML: 10.1.3.5.0 Stopped
+25/01/03 15:23:02.520 10.1.3.5.0 Started
+25/01/03 15:23:04.81 APPS_HTML: 10.1.3.5.0 Started
+25/01/03 15:23:24.289 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/03 15:23:24.289 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/03 15:23:24.289 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/03 15:26:06.594 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/03 15:26:15.577 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/03 15:26:22.983 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/03 15:28:24.820 APPS_HTML: 10.1.3.5.0 Stopped
+25/01/03 15:28:25.322 10.1.3.5.0 Started
+25/01/03 15:28:26.886 APPS_HTML: 10.1.3.5.0 Started
+25/01/03 15:28:52.715 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/03 15:28:52.715 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/03 15:28:52.715 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/03 15:43:18.933 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/03 15:43:26.40 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/03 15:43:34.865 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/08 10:58:53.73 10.1.3.5.0 Started
+25/01/08 10:58:59.25 APPS_HTML: 10.1.3.5.0 Started
+25/01/08 10:59:38.115 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/08 10:59:38.115 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/08 10:59:38.120 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/09 14:29:49.788 10.1.3.5.0 Started
+25/01/09 14:30:03.653 APPS_HTML: 10.1.3.5.0 Started
+25/01/09 14:30:30.811 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/09 14:30:30.811 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/09 14:30:30.811 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/09 15:15:53.408 10.1.3.5.0 Started
+25/01/09 15:15:55.83 APPS_HTML: 10.1.3.5.0 Started
+25/01/09 15:16:22.975 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/09 15:16:22.991 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/09 15:16:22.991 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/09 16:13:52.537 10.1.3.5.0 Started
+25/01/09 16:13:54.415 APPS_HTML: 10.1.3.5.0 Started
+25/01/09 16:14:22.714 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/09 16:14:22.714 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/09 16:14:22.714 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/09 16:42:29.222 10.1.3.5.0 Started
+25/01/09 16:42:30.907 APPS_HTML: 10.1.3.5.0 Started
+25/01/09 16:43:01.525 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/09 16:43:01.525 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/09 16:43:01.541 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/09 16:49:35.362 10.1.3.5.0 Started
+25/01/09 16:49:36.993 APPS_HTML: 10.1.3.5.0 Started
+25/01/09 16:50:04.335 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/09 16:50:04.335 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/09 16:50:04.335 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 11:51:58.300 10.1.3.5.0 Started
+25/01/10 11:52:02.143 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 11:52:28.8 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 11:52:28.8 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 11:52:28.13 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 12:04:28.770 10.1.3.5.0 Started
+25/01/10 12:04:32.610 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 12:04:53.677 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 12:04:53.677 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 12:04:53.682 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 12:06:59.500 10.1.3.5.0 Started
+25/01/10 12:07:01.233 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 12:07:22.14 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 12:07:22.14 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 12:07:22.19 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 12:42:24.307 APPS_HTML: 10.1.3.5.0 Stopped
+25/01/10 12:42:25.465 10.1.3.5.0 Started
+25/01/10 12:42:27.508 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 12:42:45.620 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 12:42:45.620 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 12:42:45.625 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 12:47:16.939 10.1.3.5.0 Started
+25/01/10 12:47:18.529 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 12:47:37.120 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 12:47:37.120 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 12:47:37.125 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 13:14:40.978 10.1.3.5.0 Started
+25/01/10 13:14:42.596 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 13:15:02.758 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 13:15:02.758 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 13:15:02.763 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 13:23:07.181 APPS_HTML: 10.1.3.5.0 Stopped
+25/01/10 13:23:07.574 10.1.3.5.0 Started
+25/01/10 13:23:08.939 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 13:23:28.240 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 13:23:28.240 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 13:23:28.247 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 13:25:44.151 10.1.3.5.0 Started
+25/01/10 13:25:46.26 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 13:26:07.289 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 13:26:07.290 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 13:26:07.296 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 13:50:41.758 10.1.3.5.0 Started
+25/01/10 13:50:43.519 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 13:51:08.745 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 13:51:08.745 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 13:51:08.750 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 14:35:19.158 10.1.3.5.0 Started
+25/01/10 14:35:20.889 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 14:36:04.706 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 14:36:04.706 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 14:36:04.711 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 14:39:16.547 APPS_HTML: 10.1.3.5.0 Stopped
+25/01/10 14:39:17.3 10.1.3.5.0 Started
+25/01/10 14:39:18.491 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 14:40:21.878 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 14:40:21.879 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 14:40:21.883 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 15:24:59.975 10.1.3.5.0 Started
+25/01/10 15:25:02.757 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 15:25:23.400 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 15:25:23.400 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 15:25:23.405 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 15:29:06.267 10.1.3.5.0 Started
+25/01/10 15:29:08.227 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 15:29:26.985 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 15:29:26.986 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 15:29:26.990 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 15:39:58.618 10.1.3.5.0 Started
+25/01/10 15:40:00.344 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 15:40:24.529 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 15:40:24.529 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 15:40:24.534 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 16:12:53.41 10.1.3.5.0 Started
+25/01/10 16:12:55.63 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 16:13:15.527 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 16:13:15.527 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 16:13:15.532 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 16:18:09.421 APPS_HTML: OABodyBean, localName='body': Could not find partial target: desc
+25/01/10 16:18:09.421 APPS_HTML: OABodyBean, localName='body': Could not find partial target: desc0_0__48
+25/01/10 16:18:09.421 APPS_HTML: OABodyBean, localName='body': Could not find partial target: desc7_0__48
+25/01/10 16:18:09.421 APPS_HTML: OABodyBean, localName='body': Could not find partial target: desc7HiddenFlexId_0__48
+25/01/10 16:18:13.949 APPS_HTML: OABodyBean, localName='body': Could not find partial target: desc
+25/01/10 16:20:43.796 10.1.3.5.0 Started
+25/01/10 16:20:45.729 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 16:21:11.971 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 16:21:11.971 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 16:21:11.978 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 16:27:33.732 10.1.3.5.0 Started
+25/01/10 16:27:35.454 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 16:27:55.546 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 16:27:55.546 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 16:27:55.551 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 16:40:52.100 10.1.3.5.0 Started
+25/01/10 16:40:53.752 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 16:41:18.409 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 16:41:18.409 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 16:41:18.414 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/10 16:54:11.325 10.1.3.5.0 Started
+25/01/10 16:54:13.74 APPS_HTML: 10.1.3.5.0 Started
+25/01/10 16:54:37.313 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/10 16:54:37.313 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/10 16:54:37.317 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/13 10:12:49.274 10.1.3.5.0 Started
+25/01/13 10:12:53.17 APPS_HTML: 10.1.3.5.0 Started
+25/01/13 10:13:50.45 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/13 10:13:50.45 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/13 10:13:50.45 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/13 10:35:05.854 APPS_HTML: 10.1.3.5.0 Stopped
+25/01/13 10:35:06.223 10.1.3.5.0 Started
+25/01/13 10:35:08.66 APPS_HTML: 10.1.3.5.0 Started
+25/01/13 10:35:48.536 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/13 10:35:48.536 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/13 10:35:48.536 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/13 10:40:46.484 10.1.3.5.0 Started
+25/01/13 10:40:48.155 APPS_HTML: 10.1.3.5.0 Started
+25/01/13 10:41:12.802 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/13 10:41:12.802 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/13 10:41:12.802 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/13 10:47:47.319 10.1.3.5.0 Started
+25/01/13 10:47:48.935 APPS_HTML: 10.1.3.5.0 Started
+25/01/13 10:48:08.308 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/13 10:48:08.308 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/13 10:48:08.308 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/13 10:56:17.835 10.1.3.5.0 Started
+25/01/13 10:56:19.842 APPS_HTML: 10.1.3.5.0 Started
+25/01/13 10:56:44.57 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/13 10:56:44.57 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/13 10:56:44.72 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/13 12:00:57.47 10.1.3.5.0 Started
+25/01/13 12:00:59.17 APPS_HTML: 10.1.3.5.0 Started
+25/01/13 12:01:20.357 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/13 12:01:20.357 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/13 12:01:20.357 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/13 12:41:28.598 10.1.3.5.0 Started
+25/01/13 12:41:31.415 APPS_HTML: 10.1.3.5.0 Started
+25/01/13 12:41:57.96 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/13 12:41:57.96 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/13 12:41:57.112 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/13 13:21:55.898 10.1.3.5.0 Started
+25/01/13 13:21:57.634 APPS_HTML: 10.1.3.5.0 Started
+25/01/13 13:22:17.249 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/13 13:22:17.249 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/13 13:22:17.249 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/13 13:27:39.938 10.1.3.5.0 Started
+25/01/13 13:27:41.656 APPS_HTML: 10.1.3.5.0 Started
+25/01/13 13:28:01.744 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/13 13:28:01.744 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/13 13:28:01.744 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/13 13:33:52.758 APPS_HTML: 10.1.3.5.0 Stopped
+25/01/13 13:33:53.121 10.1.3.5.0 Started
+25/01/13 13:33:54.700 APPS_HTML: 10.1.3.5.0 Started
+25/01/13 13:34:20.459 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/13 13:34:20.459 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/13 13:34:20.459 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/13 14:01:58.547 10.1.3.5.0 Started
+25/01/13 14:02:00.217 APPS_HTML: 10.1.3.5.0 Started
+25/01/13 14:02:30.45 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/13 14:02:30.45 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/13 14:02:30.45 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/13 14:10:51.875 10.1.3.5.0 Started
+25/01/13 14:10:53.588 APPS_HTML: 10.1.3.5.0 Started
+25/01/13 14:11:13.112 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/13 14:11:13.112 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/13 14:11:13.112 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/13 14:28:47.71 10.1.3.5.0 Started
+25/01/13 14:28:48.856 APPS_HTML: 10.1.3.5.0 Started
+25/01/13 14:29:10.130 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/13 14:29:10.130 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/13 14:29:10.130 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/13 14:33:38.959 10.1.3.5.0 Started
+25/01/13 14:33:40.637 APPS_HTML: 10.1.3.5.0 Started
+25/01/13 14:34:00.714 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/13 14:34:00.714 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/13 14:34:00.714 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/13 16:55:11.521 10.1.3.5.0 Started
+25/01/13 16:55:14.107 APPS_HTML: 10.1.3.5.0 Started
+25/01/13 16:55:35.714 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/13 16:55:35.714 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/13 16:55:35.723 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 08:49:34.170 10.1.3.5.0 Started
+25/01/14 08:49:39.3 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 08:57:59.16 10.1.3.5.0 Started
+25/01/14 08:58:00.742 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 08:58:27.855 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 08:58:27.855 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 08:58:27.871 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 09:20:56.450 10.1.3.5.0 Started
+25/01/14 09:20:58.69 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 09:25:14.713 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 09:25:14.713 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 09:25:14.713 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 09:45:34.535 10.1.3.5.0 Started
+25/01/14 09:45:36.345 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 09:46:44.254 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 09:46:44.254 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 09:46:44.254 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 09:49:53.435 10.1.3.5.0 Started
+25/01/14 09:49:54.844 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 09:50:57.686 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 09:50:57.686 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 09:50:57.702 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 10:00:09.787 10.1.3.5.0 Started
+25/01/14 10:00:11.722 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 10:01:06.853 APPS_HTML: 10.1.3.5.0 Stopped
+25/01/14 10:01:08.366 10.1.3.5.0 Started
+25/01/14 10:01:10.285 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 10:01:56.430 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 10:01:56.430 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 10:01:56.430 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 10:03:37.215 10.1.3.5.0 Started
+25/01/14 10:03:38.732 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 10:04:21.211 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 10:04:21.211 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 10:04:21.211 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 10:12:43.186 10.1.3.5.0 Started
+25/01/14 10:12:45.27 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 10:14:08.370 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 10:14:08.370 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 10:14:08.370 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 10:38:59.844 10.1.3.5.0 Started
+25/01/14 10:39:01.576 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 10:40:54.118 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 10:40:54.118 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 10:40:54.118 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 10:44:06.437 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/01/14 10:44:14.730 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/01/14 10:44:19.585 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/14 10:44:24.872 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/01/14 10:44:24.872 APPS_HTML: OABodyBean, localName='body': Could not find partial target: viewPortHeight:FLEXDYNAMICLOV_lovTable
+25/01/14 10:44:29.585 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/01/14 10:44:32.696 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/14 10:44:37.538 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/01/14 10:44:37.538 APPS_HTML: OABodyBean, localName='body': Could not find partial target: viewPortHeight:FLEXDYNAMICLOV_lovTable
+25/01/14 10:44:41.103 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/01/14 10:44:44.929 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/14 10:44:50.255 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/01/14 10:44:50.255 APPS_HTML: OABodyBean, localName='body': Could not find partial target: viewPortHeight:FLEXDYNAMICLOV_lovTable
+25/01/14 10:44:53.491 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/01/14 10:44:56.363 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/14 10:45:00.381 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/01/14 10:45:05.609 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/01/14 10:45:10.290 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/01/14 10:45:22.909 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/01/14 10:45:34.846 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/01/14 10:45:44.802 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/14 10:45:49.789 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/01/14 10:45:49.789 APPS_HTML: OABodyBean, localName='body': Could not find partial target: viewPortHeight:FLEXDYNAMICLOV_lovTable
+25/01/14 10:45:54.478 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/01/14 10:45:59.720 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/01/14 11:26:15.788 10.1.3.5.0 Started
+25/01/14 11:26:17.999 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 11:28:24.257 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 11:28:24.257 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 11:28:24.272 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 11:38:40.645 10.1.3.5.0 Started
+25/01/14 11:38:42.649 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 11:41:46.693 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 11:41:46.693 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 11:41:46.693 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 11:48:18.254 10.1.3.5.0 Started
+25/01/14 11:48:19.837 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 12:21:06.937 10.1.3.5.0 Started
+25/01/14 12:21:09.122 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 12:21:30.963 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 12:21:30.963 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 12:21:30.963 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 13:17:16.839 10.1.3.5.0 Started
+25/01/14 13:17:18.747 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 13:17:41.891 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 13:17:41.891 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 13:17:41.905 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 13:20:49.843 10.1.3.5.0 Started
+25/01/14 13:20:51.653 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 13:21:12.341 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 13:21:12.341 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 13:21:12.357 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 13:24:37.683 10.1.3.5.0 Started
+25/01/14 13:24:39.228 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 13:25:03.90 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 13:25:03.90 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 13:25:03.90 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 13:29:17.54 10.1.3.5.0 Started
+25/01/14 13:29:19.187 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 13:29:45.374 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 13:29:45.374 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 13:29:45.374 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 13:34:00.283 10.1.3.5.0 Started
+25/01/14 13:34:02.184 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 13:34:24.697 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 13:34:24.697 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 13:34:24.713 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 13:48:21.410 10.1.3.5.0 Started
+25/01/14 13:48:23.439 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 13:48:49.98 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 13:48:49.98 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 13:48:49.98 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 15:24:24.182 10.1.3.5.0 Started
+25/01/14 15:24:26.191 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 15:24:53.183 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 15:24:53.183 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 15:24:53.199 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 15:30:50.412 10.1.3.5.0 Started
+25/01/14 15:30:52.82 APPS_HTML: 10.1.3.5.0 Started
+25/01/14 15:31:16.614 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/01/14 15:31:16.614 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/01/14 15:31:16.614 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/01/14 15:41:57.338 APPS_HTML: OABodyBean, localName='body': Could not find partial target: viewPortHeight:OrdersRN.OrdersTable
+25/01/14 15:42:01.573 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/14 15:42:11.944 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/14 15:42:19.253 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/14 15:42:29.31 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/14 15:42:35.246 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/14 16:03:54.129 APPS_HTML: OABodyBean, localName='body': Could not find partial target: viewPortHeight:OrdersRN.OrdersTable
+25/01/14 16:03:56.296 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/14 16:04:03.267 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/01/14 16:04:08.971 APPS_HTML: OAFormValueBean, localName='formValue': rootAttrs can only be used inside a template
+25/02/17 14:19:16.82 10.1.3.5.0 Started
+25/02/17 14:19:20.182 APPS_HTML: 10.1.3.5.0 Started
+25/02/17 14:19:59.272 APPS_HTML: alta-desktop.xss: Parsing error, line 417, column 62: Invalid color: currentcolor
+25/02/17 14:19:59.272 APPS_HTML: alta-desktop.xss: Parsing error, line 431, column 62: Invalid color: currentcolor
+25/02/17 14:19:59.277 APPS_HTML: alta-desktop.xss: Parsing error, line 4729, column 61: Invalid color: #ffffff !important
+25/02/17 14:23:51.199 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/02/17 14:24:51.394 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/02/17 14:25:48.533 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue
+25/02/17 14:26:10.202 APPS_HTML: OAFormValueBean, localName='formValue': Could not locate parent form for  formValue tableNameFormValue

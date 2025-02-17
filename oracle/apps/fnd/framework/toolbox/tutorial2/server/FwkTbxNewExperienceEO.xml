@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: FwkTbxNewExperienceEO.xml 120.0.12020000.1 2020/01/08 06:43:00 spunam noship $ -->
+
+<Entity
+   Name="FwkTbxNewExperienceEO"
+   DBObjectType="table"
+   DBObjectName="FWK_TBX_NEW_EXPERIENCE"
+   AliasName="FwkTbxNewExperienceEO"
+   BindingStyle="OracleName"
+   UseGlueCode="false"
+   RowClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceEOImpl"
+   DefClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceEODefImpl"
+   CollClass="oracle.apps.fnd.framework.server.OAEntityCache" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+      <Attr Name="_codeGenFlag2" Value="Init|Delete|Access|DML|Def|Val" />
+   </DesignTime>
+   <Attribute
+      Name="ExperienceId"
+      IsUpdateable="while_insert"
+      IsNotNull="true"
+      ColumnName="EXPERIENCE_ID"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="FWK_TBX_NEW_EXPERIENCE"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="EmployeeId"
+      IsNotNull="true"
+      ColumnName="EMPLOYEE_ID"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="FWK_TBX_NEW_EXPERIENCE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="OrganizationName"
+      Precision="60"
+      ColumnName="ORGANIZATION_NAME"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="FWK_TBX_NEW_EXPERIENCE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="60" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Designation"
+      Precision="60"
+      ColumnName="DESIGNATION"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="FWK_TBX_NEW_EXPERIENCE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="60" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="StartDate"
+      ColumnName="START_DATE"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      SQLType="TIMESTAMP"
+      TableName="FWK_TBX_NEW_EXPERIENCE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="EndDate"
+      ColumnName="END_DATE"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      SQLType="TIMESTAMP"
+      TableName="FWK_TBX_NEW_EXPERIENCE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <AccessorAttribute
+      Name="FwkTbxNewEMployeeEO"
+      Association="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceFkAssoc"
+      AssociationEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceFkAssoc.FwkTbxNewEMployeeEO"
+      AssociationOtherEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceFkAssoc.FwkTbxNewExperienceEO"
+      Type="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEMployeeEOImpl" >
+   </AccessorAttribute>
+   <Key
+      Name="FwkTbxNewExperiencePk" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceEO.ExperienceId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isPrimary" Value="true" />
+         <Attr Name="_DBObjectName" Value="FWK_TBX_NEW_EXPERIENCE_PK" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC00245792" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceEO.ExperienceId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_checkCondition" Value="&#34;EXPERIENCE_ID&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+         <Attr Name="_DBObjectName" Value="SYS_C00245792" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC00245793" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceEO.EmployeeId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_checkCondition" Value="&#34;EMPLOYEE_ID&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+         <Attr Name="_DBObjectName" Value="SYS_C00245793" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="FwkTbxNewExperienceFk" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceEO.EmployeeId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_referencedKey" Value="FWK_TBX_NEW_EMPLOYEE_PK" />
+         <Attr Name="_isForeign" Value="true" />
+         <Attr Name="_DBObjectName" Value="FWK_TBX_NEW_EXPERIENCE_FK" />
+      </DesignTime>
+   </Key>
+</Entity>

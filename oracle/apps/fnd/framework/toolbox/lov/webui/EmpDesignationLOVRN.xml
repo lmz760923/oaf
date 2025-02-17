@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!-- dbdrv: exec java oracle/jrad/tools/xml/importer XMLImporter.class java &phase=dat+24 checkfile:~PROD:~PATH:~FILE &fullpath:~PROD:~PATH:~FILE -username &un_apps -password &pw_apps -dbconnection &jdbc_db_addr -userId "1" -rootPackage /oracle/apps/~PROD -rootdir &fullpath:~PROD:mds:directory-->
+<oa:listOfValues version="10.1.3_" xml:lang="en-US" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:ui="http://xmlns.oracle.com/uix/ui" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header: EmpDesignationLOVRN.xml 120.0.12020000.2 2020/01/13 17:47:43 spunam noship $" scope="/" advancedSearchAllowed="true" amDefName="oracle.apps.fnd.framework.toolbox.lov.server.EmpDesignationLOVAM">
+   <ui:contents>
+      <oa:table name="EmpDesignationLOVRN" id="EmpDesignationResultsRN" shortDesc="Employee Designation List Of Values">
+         <ui:contents>
+            <oa:messageStyledText id="Designation" use="/oracle/apps/fnd/framework/toolbox/attributesets/FwkTbxEmployees/Position" dataType="VARCHAR2" viewName="EmpDesignationLOVVO1" viewAttr="Designation" maximumLength="30" queryable="true" selectiveSearchCriteria="true" styleClass="OraFieldText"/>
+         </ui:contents>
+      </oa:table>
+   </ui:contents>
+</oa:listOfValues>

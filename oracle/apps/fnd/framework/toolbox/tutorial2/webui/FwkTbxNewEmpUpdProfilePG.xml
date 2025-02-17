@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!-- dbdrv: exec java oracle/jrad/tools/xml/importer XMLImporter.class java &phase=dat+24 checkfile:~PROD:~PATH:~FILE &fullpath:~PROD:~PATH:~FILE -username &un_apps -password &pw_apps -dbconnection &jdbc_db_addr -userId "1" -rootPackage /oracle/apps/~PROD -rootdir &fullpath:~PROD:mds:directory -->
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header: FwkTbxNewEmpUpdProfilePG.xml 120.0.12020000.1 2020/01/10 13:14:58 spunam noship $">
+   <content>
+      <oa:pageLayout id="PageLayoutRN" amDefName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpUpdateAM" windowTitle="Update Profile" title="Update Profile" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial2.webui.FwkTbxNewEmpUpdProfileCO">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:messageStyledText id="PageInfo" prompt="Update your basic details here." shortDesc="Update your basic details here."/>
+            <oa:stackLayout id="table">
+               <ui:contents>
+                  <oa:rowLayout id="BasicDetailsRN" hAlign="center">
+                     <ui:contents>
+                        <oa:cellFormat id="ImageHolder" rowSpan="3" hAlign="center">
+                           <ui:contents>
+                              <oa:image id="EmployeeImage" source="/OA_MEDIA/male_lg_img.png" imageHeight="100" imageWidth="100"/>
+                              <oa:messageStyledText id="UploadPhotoText" prompt="Upload Photo" shortDesc="Upload Photo" styleClass="OraFieldText"/>
+                              <oa:messageFileUpload id="UploadEmpImage" prompt="" shortDesc="Upload Photo" dataType="BLOB" viewName="FwkTbxNewEmpVO1" viewAttr="EmpPhoto" columns="10" vAlign="middle" cellNoWrapFormat="true" tipType="none"/>
+                           </ui:contents>
+                        </oa:cellFormat>
+                        <oa:spacer id="item1122" width="50"/>
+                        <oa:cellFormat id="EmpDetRegion">
+                           <ui:contents>
+                              <oa:messageComponentLayout id="EmployeeDetRN" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial2.webui.FwkTbxNewEmpGenderCO">
+                                 <ui:contents>
+                                    <oa:messageRadioGroup id="EmployeeGender" prompt="Title" pickListViewDef="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTitleVO" pickListViewName="FwkTbxNewEmpTitleVO1" pickListDispAttr="Title" pickListValAttr="Title" cellNoWrapFormat="false" tipType="none" defaultValue="Title" userCustomizable="false" viewName="FwkTbxNewEmpVO1" viewAttr="Title"/>
+                                    <oa:messageTextInput id="EmployeeName" prompt="Name" viewName="FwkTbxNewEmpVO1" viewAttr="FullName"/>
+                                    <oa:messageTextInput id="EmployeeEmail" viewName="FwkTbxNewEmpVO1" viewAttr="EmailAddress" prompt="Email"/>
+                                    <oa:messageLovInput id="SearchEmpDesignation" externalListOfValues="/oracle/apps/fnd/framework/toolbox/lov/webui/EmpDesignationLOVRN" prompt="Designation" viewName="FwkTbxNewEmpVO1" viewAttr="PositionCode" disabled="true">
+                                       <lovMappings>
+                                          <lovMap id="EmployeeDesignation" resultTo="SearchEmpDesignation" criteriaFrom="SearchEmpDesignation" lovItem="Designation"/>
+                                       </lovMappings>
+                                    </oa:messageLovInput>
+                                    <oa:messageTextInput id="EmployeeGuid" prompt="Guid" viewName="FwkTbxNewEmpVO1" viewAttr="Guid" disabled="true"/>
+                                    <oa:messageTextInput id="EmployeePhone" prompt="Phone" viewName="FwkTbxNewEmpAddressVO1" viewAttr="MobileNumber"/>
+                                    <oa:messageChoice id="EmployeeType" prompt="Employee Type" defaultValue="Developer" pickListViewDef="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTypeVO" pickListViewName="FwkTbxNewEmpTypeVO1" pickListDispAttr="EmployeeType" pickListValAttr="EmployeeType" disabled="true" viewName="FwkTbxNewEmpVO1" viewAttr="EmployeeType" allowBlankValue="false"/>
+                                 </ui:contents>
+                              </oa:messageComponentLayout>
+                           </ui:contents>
+                        </oa:cellFormat>
+                        <oa:cellFormat id="EmployeeLocationRN">
+                           <ui:contents>
+                              <oa:flex id="EmployeeLocationDFF" viewName="FwkTbxNewAddressDFFVO1" prompt="Country" flexFieldAppShortName="FND" flexName="DFFTEST_LOC"/>
+                           </ui:contents>
+                        </oa:cellFormat>
+                     </ui:contents>
+                  </oa:rowLayout>
+               </ui:contents>
+            </oa:stackLayout>
+            <oa:spacer id="item112" height="1"/>
+            <oa:rowLayout id="FwkTbxAttachmentUpdateRN" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial2.webui.FwkTbxNewEmpViewCO" amDefName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmployeeAM" rendered="true" hAlign="center">
+               <ui:contents>
+                  <oa:cellFormat id="region1" width="30%"/>
+                  <oa:messageInlineAttachment id="Attachments1" inlineAttachmentEnabled="true" viewName="FwkTbxNewEmpDetVO1">
+                     <oa:entityMappings>
+                        <oa:entityMap id="entityMap111" entityId="FWK_TBX_NEW" insertAllowed="true" updateAllowed="true" deleteAllowed="true" showAll="true">
+                           <oa:primaryKeys>
+                              <oa:primaryKey id="primaryKey111" viewAttr="EmployeeId"/>
+                           </oa:primaryKeys>
+                        </oa:entityMap>
+                     </oa:entityMappings>
+                  </oa:messageInlineAttachment>
+               </ui:contents>
+            </oa:rowLayout>
+            <oa:spacer id="item1121" height="1"/>
+            <oa:pageButtonBar id="PageButBarRN" extends="/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewEmpUpdPgNav"/>
+         </ui:contents>
+         <ui:location>
+            <oa:train id="EmpUpdTrain" extends="/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewUpdEmpTrain"/>
+         </ui:location>
+      </oa:pageLayout>
+   </content>
+</page>

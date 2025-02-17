@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!--dbdrv: exec java oracle/jrad/tools/xml/importer XMLImporter.class java &phase=dat+24 checkfile:~PROD:~PATH:~FILE &fullpath:~PROD:~PATH:~FILE -username &un_apps -password &pw_apps -dbconnection &jdbc_db_addr -userId "1" -rootPackage /oracle/apps/~PROD -rootdir &fullpath:~PROD:mds:directory-->
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header: FwkTbxNewEmpAssetMngPG.xml 120.0.12020000.1 2020/01/10 12:23:22 spunam noship $">
+   <content>
+      <oa:pageLayout id="PageRN" amDefName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmployeeAM" windowTitle="Toolbox Enhancement" title="Asset Management" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial2.webui.FwkTbxNewEmpAssetMngExtandCO">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:query id="QueryRN" mode="autoCustomizationCriteria" dispSimple="true" dispCustomized="true" dispAdvanced="true" defaultPanel="advanced">
+               <ui:contents>
+                  <oa:advancedTable id="AdvancedTableRN" extends="/oracle/apps/fnd/framework/toolbox/tutorial2/webui/EmpAssetExtTableRN"/>
+               </ui:contents>
+               <oa:simpleSearchPanel>
+                  <oa:header text="Simple Search" id="SimpleSearchHdr">
+                     <ui:contents>
+                        <oa:messageComponentLayout id="CustomSimpleSearch" columns="1" rows="10">
+                           <ui:contents>
+                              <oa:messageTextInput id="SearchAssetId" selectiveSearchCriteria="false" prompt="Asset Id" shortDesc="Asset  Id" columns="40"/>
+                              <oa:messageTextInput id="SearchAssetType" prompt="Asset Type" shortDesc="Asset Type" selectiveSearchCriteria="false" columns="40"/>
+                              <oa:messageTextInput id="SearchAssetNum" prompt="Asset Number"/>
+                              <oa:messageTextInput id="SearchModelNum" prompt="Model Number"/>
+                              <oa:messageLayout id="SearchAssetNumberML">
+                                 <ui:contents>
+                                    <oa:flex id="SearchAssetNumberFlex" flexFieldAppShortName="FND" flexName="ASN#" flexStyle="key" prompt="Asset Number Flex" shortDesc="Search Asset Number Flex"/>
+                                 </ui:contents>
+                              </oa:messageLayout>
+                           </ui:contents>
+                        </oa:messageComponentLayout>
+                     </ui:contents>
+                  </oa:header>
+               </oa:simpleSearchPanel>
+               <oa:simpleSearchMappings>
+                  <oa:queryCriteriaMap id="AssetIdMap" criteriaItem="SearchAssetId" resultsItem="AdvancedTableRN.AssetId"/>
+                  <oa:queryCriteriaMap id="AssetTypeMap" criteriaItem="SearchAssetType" resultsItem="AdvancedTableRN.AssetType"/>
+                  <oa:queryCriteriaMap id="AssetNumbFlexMap" criteriaItem="SearchAssetNumberFlex" resultsItem="AdvancedTableRN.AssetNumberFlex"/>
+                  <oa:queryCriteriaMap id="AssetNumMap" criteriaItem="SearchAssetNum" resultsItem="AdvancedTableRN.AssetNumber"/>
+                  <oa:queryCriteriaMap id="ModelNumMap" criteriaItem="SearchModelNum" resultsItem="AdvancedTableRN.ModelNumber"/>
+               </oa:simpleSearchMappings>
+               <oa:advancedSearchPanel>
+                  <oa:header text="Advanced Search" id="AdvandedSearchHeader">
+                     <ui:contents>
+                        <oa:advancedSearch id="region1" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial2.webui.FwkTbxNewEmpAssetAdvSearchCO">
+                           <oa:criteria>
+                              <oa:criteriaRow id="AssetIdCriteriaRow">
+                                 <ui:contents>
+                                    <oa:messageStyledText id="item1" prompt="Asset ID"/>
+                                    <oa:messageTextInput id="AssetIdCItem"/>
+                                 </ui:contents>
+                              </oa:criteriaRow>
+                              <oa:criteriaRow id="AssetTypeCriteriaRow">
+                                 <ui:contents>
+                                    <oa:messageStyledText id="item11" prompt="Asset Type"/>
+                                    <oa:messageTextInput id="AssetTypeCItem"/>
+                                 </ui:contents>
+                              </oa:criteriaRow>
+                              <oa:criteriaRow id="AssetNumberCriteriaRow">
+                                 <ui:contents>
+                                    <oa:messageStyledText id="item12" prompt="Asset Num"/>
+                                    <oa:messageTextInput id="AssetNumberCItem"/>
+                                 </ui:contents>
+                              </oa:criteriaRow>
+                              <oa:criteriaRow id="ModelNumCriteriaRow">
+                                 <ui:contents>
+                                    <oa:messageStyledText id="item14" prompt="Model Number"/>
+                                    <oa:messageTextInput id="ModelNumCItem"/>
+                                 </ui:contents>
+                              </oa:criteriaRow>
+                              <oa:criteriaRow id="InUseCriteriaRow">
+                                 <ui:contents>
+                                    <oa:messageStyledText id="item15" prompt="In Use"/>
+                                    <oa:messageTextInput id="InUseCItem"/>
+                                 </ui:contents>
+                              </oa:criteriaRow>
+                              <oa:criteriaRow id="AssetFlexCriteriaRow">
+                                 <ui:contents>
+                                    <oa:messageStyledText id="item131" prompt="Asset Flex"/>
+                                    <oa:flex id="AssetFlexCItem" flexFieldAppShortName="FND" flexName="ASN#" flexStyle="key"/>
+                                 </ui:contents>
+                              </oa:criteriaRow>
+                           </oa:criteria>
+                        </oa:advancedSearch>
+                     </ui:contents>
+                  </oa:header>
+               </oa:advancedSearchPanel>
+               <oa:advancedSearchMappings>
+                  <oa:queryCriteriaMap id="AssetIdCriteriaMap" criteriaItem="AssetIdCItem" resultsItem="AdvancedTableRN.AssetId"/>
+                  <oa:queryCriteriaMap id="AssetTypeCriteriaMap" criteriaItem="AssetTypeCItem" resultsItem="AdvancedTableRN.AssetType"/>
+                  <oa:queryCriteriaMap id="AssetNumCriteriaMap" criteriaItem="AssetNumberCItem" resultsItem="AdvancedTableRN.AssetNumber"/>
+                  <oa:queryCriteriaMap id="AssetFlexCriteriaMap" criteriaItem="AssetFlexCItem" resultsItem="AdvancedTableRN.AssetNumberFlex"/>
+                  <oa:queryCriteriaMap id="ModelTypeCriteriaMap" criteriaItem="ModelNumCItem" resultsItem="AdvancedTableRN.ModelNumber"/>
+                  <oa:queryCriteriaMap id="InUseCriteriaMap" criteriaItem="InUseCItem" resultsItem="AdvancedTableRN.InUse"/>
+               </oa:advancedSearchMappings>
+            </oa:query>
+            <oa:pageButtonBar id="pageButtonBar">
+               <ui:contents>
+                  <oa:button id="backBtn" text="Return to Miscelleneous Page" prompt="Return to Miscelleneous Page" shortDesc="Back" destination="OA.jsp?page=/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewEmpDetails"/>
+                  <oa:button id="backEmpSch" text="Return to Employee Search Page" prompt="Return to Employee Search Page" shortDesc="Return to Employee Search Page" destination="OA.jsp?page=/oracle/apps/fnd/framework/toolbox/tutorial2/webui/EmployeeSearchPG"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: FwkTbxNewEmpTrainingsEO.xml 120.0.12020000.1 2020/01/08 06:28:41 spunam noship $ -->
+
+<Entity
+   Name="FwkTbxNewEmpTrainingsEO"
+   DBObjectType="table"
+   DBObjectName="FWK_TBX_NEW_EMP_TRAINING"
+   AliasName="FwkTbxNewEmpTrainingsEO"
+   BindingStyle="OracleName"
+   UseGlueCode="false"
+   RowClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingsEOImpl"
+   DefClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingsEODefImpl"
+   CollClass="oracle.apps.fnd.framework.server.OAEntityCache" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+      <Attr Name="_codeGenFlag2" Value="Init|Delete|Access|DML|Def|Val" />
+   </DesignTime>
+   <Attribute
+      Name="EmpTrainingId"
+      IsUpdateable="while_insert"
+      IsNotNull="true"
+      ColumnName="EMP_TRAINING_ID"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="FWK_TBX_NEW_EMP_TRAINING"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="TrainingId"
+      IsNotNull="true"
+      ColumnName="TRAINING_ID"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="FWK_TBX_NEW_EMP_TRAINING" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="EmployeeId"
+      IsNotNull="true"
+      ColumnName="EMPLOYEE_ID"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="FWK_TBX_NEW_EMP_TRAINING" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Status"
+      Precision="20"
+      ColumnName="STATUS"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="FWK_TBX_NEW_EMP_TRAINING" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="20" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="StartDate"
+      ColumnName="START_DATE"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      SQLType="TIMESTAMP"
+      TableName="FWK_TBX_NEW_EMP_TRAINING" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="EnrolledDate"
+      ColumnName="ENROLLED_DATE"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      SQLType="TIMESTAMP"
+      TableName="FWK_TBX_NEW_EMP_TRAINING" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="EndDate"
+      ColumnName="END_DATE"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      SQLType="TIMESTAMP"
+      TableName="FWK_TBX_NEW_EMP_TRAINING" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Certification"
+      Precision="1"
+      ColumnName="CERTIFICATION"
+      Type="java.lang.String"
+      ColumnType="CHAR"
+      SQLType="CHAR"
+      TableName="FWK_TBX_NEW_EMP_TRAINING"
+      RetrievedOnUpdate="true"
+      RetrievedOnInsert="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="1" />
+      </DesignTime>
+   </Attribute>
+   <AccessorAttribute
+      Name="FwkTbxNewEMployeeEO"
+      Association="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingFk1Assoc"
+      AssociationEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingFk1Assoc.FwkTbxNewEMployeeEO"
+      AssociationOtherEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingFk1Assoc.FwkTbxNewEmpTrainingsEO"
+      Type="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEMployeeEOImpl" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="FwkTbxNewTrainingEO"
+      Association="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingFk2Assoc"
+      AssociationEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingFk2Assoc.FwkTbxNewTrainingEO"
+      AssociationOtherEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingFk2Assoc.FwkTbxNewEmpTrainingsEO"
+      Type="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewTrainingEOImpl" >
+   </AccessorAttribute>
+   <Key
+      Name="FwkTbxNewEmpTrainingPk" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingsEO.EmpTrainingId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isPrimary" Value="true" />
+         <Attr Name="_DBObjectName" Value="FWK_TBX_NEW_EMP_TRAINING_PK" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC00245782" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingsEO.EmpTrainingId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_checkCondition" Value="&#34;EMP_TRAINING_ID&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+         <Attr Name="_DBObjectName" Value="SYS_C00245782" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC00245783" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingsEO.TrainingId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_checkCondition" Value="&#34;TRAINING_ID&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+         <Attr Name="_DBObjectName" Value="SYS_C00245783" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC00245784" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingsEO.EmployeeId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_checkCondition" Value="&#34;EMPLOYEE_ID&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+         <Attr Name="_DBObjectName" Value="SYS_C00245784" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="FwkTbxNewEmpTrainingFk1" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingsEO.EmployeeId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_referencedKey" Value="FWK_TBX_NEW_EMPLOYEE_PK" />
+         <Attr Name="_isForeign" Value="true" />
+         <Attr Name="_DBObjectName" Value="FWK_TBX_NEW_EMP_TRAINING_FK1" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="FwkTbxNewEmpTrainingFk2" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingsEO.TrainingId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_referencedKey" Value="FWK_TBX_NEW_TRAININGS_PK" />
+         <Attr Name="_isForeign" Value="true" />
+         <Attr Name="_DBObjectName" Value="FWK_TBX_NEW_EMP_TRAINING_FK2" />
+      </DesignTime>
+   </Key>
+</Entity>

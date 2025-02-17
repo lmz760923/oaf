@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'GBK'?>
+<data-sources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/data-sources-10_1.xsd" xmlns="http://xmlns.oracle.com/oracleas/schema">
+    <connection-pool name="jdev-connection-pool-fwk12dev">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="apps_read_only" password="->DataBase_User_0HumKXCe17-n8CaE4t4aguG4A9NMMeG7" url="jdbc:oracle:thin:@ap664sdb.us.oracle.com:4120:fwk12dev"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-fwk12dev" jndi-name="jdbc/fwk12devDS" connection-pool-name="jdev-connection-pool-fwk12dev"/>
+    <native-data-source name="jdev-connection-native-fwk12dev" jndi-name="jdbc/fwk12devCoreDS" url="jdbc:oracle:thin:@ap664sdb.us.oracle.com:4120:fwk12dev" user="apps_read_only" password="->DataBase_User_ZzzagKwlfxphA5hNSLU6yS7r0dtQcsSA" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-DEV">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="apps" password="->DataBase_User_Ub9F6-CGIft_BGoZLKSCTSxrHEWFoS1E" url="jdbc:oracle:thin:@erpdbd.belton.corp:1526:ebs_DEV"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-DEV" jndi-name="jdbc/DEVDS" connection-pool-name="jdev-connection-pool-DEV"/>
+    <native-data-source name="jdev-connection-native-DEV" jndi-name="jdbc/DEVCoreDS" url="jdbc:oracle:thin:@erpdbd.belton.corp:1526:ebs_DEV" user="apps" password="->DataBase_User_QKPRKBkbLv67KB_Zw4-_e4K-V5MFpTU9" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+</data-sources>

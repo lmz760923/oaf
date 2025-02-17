@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: FwkTbxNewEmpDistVO.xml 120.0.12020000.1 2020/01/08 05:43:58 spunam noship $ -->
+
+<ViewObject
+   Name="FwkTbxNewEmpDistVO"
+   BindingStyle="OracleName"
+   CustomQuery="true"
+   RowClass="oracle.apps.fnd.framework.server.OAViewRowImpl"
+   ComponentClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpDistVOImpl"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+select
+FTNA.country         ,
+COUNT(FTNEA.EMPLOYEE_ID) as COUNT_EMP
+from FWK_TBX_NEW_EMP_ADDRESS FTNEA,FWK_TBX_NEW_ADDRESS FTNA WHERE FTNEA.ADDRESS_ID=FTNA.ADDRESS_ID
+GROUP BY (FTNA.country)
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isExpertMode" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <ViewAttribute
+      Name="Country"
+      IsPersistent="false"
+      Precision="30"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="COUNTRY"
+      Expression="COUNTRY"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="30" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Count1_1_1"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="State"
+      IsPersistent="false"
+      Precision="30"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="STATE"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="30" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CountEmp"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="COUNT_EMP"
+      Expression="COUNT_EMP"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+</ViewObject>

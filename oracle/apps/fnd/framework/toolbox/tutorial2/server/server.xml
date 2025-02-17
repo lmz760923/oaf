@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="server"
+   SeparateXMLFiles="true"
+   PackageName="oracle.apps.fnd.framework.toolbox.tutorial2.server" >
+   <DesignTime>
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+   </DesignTime>
+   <Containee
+      Name="DummyFwkTbxAddEO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.DummyFwkTbxAddEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="DummyFwkTbxAddVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.DummyFwkTbxAddVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxEmployeeHgridVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxEmployeeHgridVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxEmpSkillsVL"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxEmpSkillsVL"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewAddressDFFEO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewAddressDFFEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewAddressDFFVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewAddressDFFVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewAssetEO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewAssetEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewAssetFkAssoc"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewAssetFkAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewAssetVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewAssetVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEducationEO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEducationEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEducationFkAssoc"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEducationFkAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEducationVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEducationVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpAddrEmpidFkAssoc"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAddrEmpidFkAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpAddressEO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAddressEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpAddressVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAddressVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpAddrVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAddrVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpAssetCcEO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAssetCcEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpAssetCcVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAssetCcVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpAssetInfoChartVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAssetInfoChartVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpDetVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpDetVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpDistVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpDistVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpEnrollTrainingVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpEnrollTrainingVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpEO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmployeeAM"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmployeeAM"
+      ObjectType="AppModule" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEMployeeEO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEMployeeEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmployeeSearchVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmployeeSearchVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmployeeVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmployeeVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpSkilEmpidFkAssoc"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkilEmpidFkAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpSkillsAO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkillsAO"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpSkillsDetVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkillsDetVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpSkillsEO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkillsEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpSkillsVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkillsVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpSkilSkilidFkAssoc"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkilSkilidFkAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpSpecificAssetInfoChartVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSpecificAssetInfoChartVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpTitleVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTitleVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpToAddrVL"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpToAddrVL"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpToEduVL"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpToEduVL"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpToEmpHgridVL"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpToEmpHgridVL"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpToEmpVL"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpToEmpVL"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpToExpVL"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpToExpVL"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpTrainingChartVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingChartVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpTrainingFk1Assoc"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingFk1Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpTrainingFk2Assoc"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingFk2Assoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpTrainingsEO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingsEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpTrainingVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpTrendGraph3VO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrendGraph3VO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpTrendGraphVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrendGraphVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpTypeVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTypeVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpUpdateAM"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpUpdateAM"
+      ObjectType="AppModule" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewEmpVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewExperienceEO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewExperienceFkAssoc"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceFkAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewExperienceVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewGenericEmpTrainingChartVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewGenericEmpTrainingChartVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewOrgDirecteesVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewOrgDirecteesVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewSkillRatingVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewSkillRatingVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewSkillsAvailableToEnrollVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewSkillsAvailableToEnrollVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewSkillsEO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewSkillsEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewSkillsVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewSkillsVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewTrainingEO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewTrainingEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="FwkTbxNewTrainingVO"
+      FullName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewTrainingVO"
+      ObjectType="ViewObject" >
+   </Containee>
+</JboPackage>

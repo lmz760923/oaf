@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: FwkTbxNewSkillsEO.xml 120.0.12020000.1 2020/01/08 07:33:51 spunam noship $ -->
+
+<Entity
+   Name="FwkTbxNewSkillsEO"
+   DBObjectType="table"
+   DBObjectName="FWK_TBX_NEW_SKILLS"
+   AliasName="FwkTbxNewSkillsEO"
+   BindingStyle="OracleName"
+   UseGlueCode="false"
+   RowClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewSkillsEOImpl"
+   DefClass="oracle.apps.fnd.framework.server.OAEntityDefImpl"
+   CollClass="oracle.apps.fnd.framework.server.OAEntityCache" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+      <Attr Name="_codeGenFlag2" Value="Init|Delete|Access|DML|Val" />
+   </DesignTime>
+   <Attribute
+      Name="SkillId"
+      IsNotNull="true"
+      ColumnName="SKILL_ID"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="FWK_TBX_NEW_SKILLS"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="SkillName"
+      IsNotNull="true"
+      Precision="60"
+      ColumnName="SKILL_NAME"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="FWK_TBX_NEW_SKILLS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="60" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Version"
+      Precision="60"
+      ColumnName="VERSION"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="FWK_TBX_NEW_SKILLS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="60" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="BroadCategory"
+      Precision="100"
+      ColumnName="BROAD_CATEGORY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="FWK_TBX_NEW_SKILLS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="100" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="SkillCategory"
+      Precision="100"
+      ColumnName="SKILL_CATEGORY"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="FWK_TBX_NEW_SKILLS" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="100" />
+      </DesignTime>
+   </Attribute>
+   <AccessorAttribute
+      Name="FwkTbxNewEmpSkillsEO"
+      Association="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkilSkilidFkAssoc"
+      AssociationEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkilSkilidFkAssoc.FwkTbxNewEmpSkillsEO"
+      AssociationOtherEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkilSkilidFkAssoc.FwkTbxNewSkillsEO"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </AccessorAttribute>
+   <AccessorAttribute
+      Name="FwkTbxNewEmpSkillsEO1"
+      Association="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkillsAO"
+      AssociationEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkillsAO.FwkTbxNewEmpSkillsEO1"
+      AssociationOtherEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkillsAO.FwkTbxNewSkillsEO1"
+      Type="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkillsEOImpl" >
+   </AccessorAttribute>
+   <ViewLinkAccessor
+      Name="FwkTbxNewEmpSkillsVO"
+      ViewLink="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxEmpSkillsVL"
+      ViewLinkEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxEmpSkillsVL.FwkTbxNewEmpSkillsVO"
+      ViewLinkOtherEnd="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxEmpSkillsVL.FwkTbxNewSkillsVO"
+      Type="oracle.apps.fnd.framework.server.OAViewRowImpl"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+   <Key
+      Name="FwkTbxNewSkillsPk" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewSkillsEO.SkillId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isPrimary" Value="true" />
+         <Attr Name="_DBObjectName" Value="FWK_TBX_NEW_SKILLS_PK" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC00245808" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewSkillsEO.SkillId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_checkCondition" Value="&#34;SKILL_ID&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+         <Attr Name="_DBObjectName" Value="SYS_C00245808" />
+      </DesignTime>
+   </Key>
+   <Key
+      Name="SysC00245809" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewSkillsEO.SkillName" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_checkCondition" Value="&#34;SKILL_NAME&#34; IS NOT NULL" />
+         <Attr Name="_isCheck" Value="true" />
+         <Attr Name="_DBObjectName" Value="SYS_C00245809" />
+      </DesignTime>
+   </Key>
+</Entity>

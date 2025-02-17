@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: FwkTbxNewEmpAddrVO.xml 120.0.12020000.1 2020/01/08 05:34:11 spunam noship $ -->
+
+<ViewObject
+   Name="FwkTbxNewEmpAddrVO"
+   BindingStyle="OracleName"
+   CustomQuery="true"
+   RowClass="oracle.apps.fnd.framework.server.OAViewRowImpl"
+   ComponentClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAddrVOImpl"
+   FetchMode="FETCH_AS_NEEDED"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+select
+FTNA.ADDRESS_ID      ,
+FTNEA.EMPLOYEE_ID    ,
+FTNA.ADDRESS_LINE_1  ,
+FTNA.ADDRESS_LINE_2  ,
+FTNA.ADDRESS_LINE_3  ,
+FTNA.COUNTRY         ,
+FTNA.STATE           ,
+FTNA.TOWN_OR_CITY    ,
+FTNA.POSTAL_CODE     ,
+FTNEA.DESK_NUMBER    ,
+FTNEA.MOBILE_NUMBER  ,
+FTNEA.TELEPHONE_NUMBER ,
+FTNA.LAST_UPDATE_DATE  
+from FWK_TBX_NEW_EMP_ADDRESS FTNEA,FWK_TBX_NEW_ADDRESS FTNA WHERE FTNEA.ADDRESS_ID=FTNA.ADDRESS_ID
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isExpertMode" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <ViewAttribute
+      Name="AddressId"
+      IsPersistent="false"
+      IsNotNull="true"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="ADDRESS_ID"
+      Expression="ADDRESS_ID"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EmployeeId"
+      IsPersistent="false"
+      IsNotNull="true"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="EMPLOYEE_ID"
+      Expression="EMPLOYEE_ID"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AddressLine1"
+      IsPersistent="false"
+      Precision="60"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="ADDRESS_LINE_1"
+      Expression="ADDRESS_LINE_1"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="60" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AddressLine2"
+      IsPersistent="false"
+      Precision="60"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="ADDRESS_LINE_2"
+      Expression="ADDRESS_LINE_2"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="60" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AddressLine3"
+      IsPersistent="false"
+      Precision="60"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="ADDRESS_LINE_3"
+      Expression="ADDRESS_LINE_3"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="60" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Country"
+      IsPersistent="false"
+      Precision="30"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="COUNTRY"
+      Expression="COUNTRY"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="30" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="State"
+      IsPersistent="false"
+      Precision="30"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="STATE"
+      Expression="STATE"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="30" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TownOrCity"
+      IsPersistent="false"
+      Precision="30"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="TOWN_OR_CITY"
+      Expression="TOWN_OR_CITY"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="30" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PostalCode"
+      IsPersistent="false"
+      Precision="30"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="POSTAL_CODE"
+      Expression="POSTAL_CODE"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="30" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateDate"
+      IsPersistent="false"
+      IsNotNull="true"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      AliasName="LAST_UPDATE_DATE"
+      Expression="LAST_UPDATE_DATE"
+      SQLType="DATE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DeskNumber"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Precision="30"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="DESK_NUMBER"
+      Expression="DESK_NUMBER"
+      SQLType="VARCHAR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="MobileNumber"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Precision="30"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="MOBILE_NUMBER"
+      Expression="MOBILE_NUMBER"
+      SQLType="VARCHAR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TelephoneNumber"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Precision="30"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="TELEPHONE_NUMBER"
+      Expression="TELEPHONE_NUMBER"
+      SQLType="VARCHAR" >
+   </ViewAttribute>
+   <AttrArray Name="KeyAttributes">
+      <Item Value="AddressId" />
+   </AttrArray>
+   <ViewLinkAccessor
+      Name="FwkTbxNewEmployeeVO"
+      ViewLink="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpToAddrVL"
+      Type="oracle.jbo.Row"
+      Reversed="true"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+</ViewObject>

@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!-- dbdrv: exec java oracle/jrad/tools/xml/importer XMLImporter.class java &phase=dat+24 checkfile:~PROD:~PATH:~FILE &fullpath:~PROD:~PATH:~FILE -username &un_apps -password &pw_apps -dbconnection &jdbc_db_addr -userId "1" -rootPackage /oracle/apps/~PROD -rootdir &fullpath:~PROD:mds:directory -->
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header: FwkTbxNewEmpViewOnlyPG.xml 120.0.12020000.2 2020/04/06 08:39:58 spunam noship $">
+   <content>
+      <oa:pageLayout id="PageLayoutRN" amDefName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmployeeAM" windowTitle="Employee Details" title="Employee Details" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial2.webui.FwkTbxNewEmpViewCO">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:panelSplitter id="panelSplitter" orientation="vertical" position="30">
+               <ui:firstPanel>
+                  <oa:stackLayout id="firstPanelRN">
+                     <ui:contents>
+                        <oa:rowLayout id="firstPanelRow">
+                           <ui:contents>
+                              <oa:image id="EmployeeImage" source="/OA_MEDIA/male_lg_img.png" imageHeight="100" imageWidth="100" shortDesc="Employee's Image"/>
+                              <oa:spacer id="spacer" width="75"/>
+                              <oa:defaultDoubleColumn id="FwkTbxEmployeeRN" headerDisabled="true">
+                                 <ui:contents>
+                                    <oa:messageStyledText id="FullName" dataType="VARCHAR2" prompt="Name" viewName="FwkTbxNewEmpDetVO1" viewAttr="FullName" maximumLength="240"/>
+                                    <oa:messageStyledText id="PositionCode" dataType="VARCHAR2" prompt="Designation" viewName="FwkTbxNewEmpDetVO1" viewAttr="Designation" maximumLength="30"/>
+                                    <oa:messageStyledText id="Guid" dataType="VARCHAR2" prompt="Guid" viewName="FwkTbxNewEmpDetVO1" viewAttr="Guid" maximumLength="10"/>
+                                    <oa:messageStyledText id="Addrress" dataType="NUMBER" prompt="Address" viewName="FwkTbxNewEmpDetVO1" viewAttr="Address"/>
+                                    <oa:messageStyledText id="DeskNumber" dataType="NUMBER" prompt="Desk Number" viewName="FwkTbxNewEmpDetVO1" viewAttr="DeskNumber"/>
+                                    <oa:messageStyledText id="Telephone" dataType="NUMBER" prompt="Telephone" viewName="FwkTbxNewEmpDetVO1" viewAttr="TelephoneNumber"/>
+                                    <oa:messageInlineAttachment id="FileDownload" inlineAttachmentEnabled="true" viewName="FwkTbxNewEmpDetVO1">
+                                       <oa:entityMappings>
+                                          <oa:entityMap id="entityMap1" entityId="FWK_TBX_NEW" insertAllowed="false" updateAllowed="false" deleteAllowed="false">
+                                             <oa:primaryKeys>
+                                                <oa:primaryKey id="primaryKey1" viewAttr="EmployeeId"/>
+                                             </oa:primaryKeys>
+                                          </oa:entityMap>
+                                       </oa:entityMappings>
+                                    </oa:messageInlineAttachment>
+                                    <oa:flowLayout id="EmployeeAddressLayout">
+                                       <ui:contents>
+                                          <oa:messageStyledText id="EmailAddress1" dataType="VARCHAR2" prompt="EmailAddress" viewName="FwkTbxNewEmpDetVO1" viewAttr="EmailAddress" maximumLength="240" popupId="SendMailPopUp" popupEnabled="true"/>
+                                          <oa:popUp id="SendMailPopUp" popupTitle="Compose Email" popupRegion="/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewEmpMailRegion" popupType="ParameterizedPopup" height="300" width="500" autoResizeEnabled="false" isModal="false" viewName="FwkTbxNewEmpDetVO1"/>
+                                       </ui:contents>
+                                    </oa:flowLayout>
+                                 </ui:contents>
+                              </oa:defaultDoubleColumn>
+                           </ui:contents>
+                        </oa:rowLayout>
+                     </ui:contents>
+                  </oa:stackLayout>
+               </ui:firstPanel>
+               <ui:secondPanel>
+                  <oa:stackLayout id="secondPanelRN">
+                     <ui:contents>
+                        <oa:subTabLayout id="SubTabLayoutRN">
+                           <ui:contents>
+                              <oa:header id="FirstSubTabRN" text="Employee Profile">
+                                 <ui:contents>
+                                    <oa:accordionLayout id="EmpAccrdnRN">
+                                       <ui:contents>
+                                          <oa:accordion id="SkillAccrdionRN" prompt="Skills">
+                                             <ui:contents>
+                                                <oa:table id="FwkTbxNewEmpSkillsRN" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial2.webui.FwkTbxSkillsCO" width="90%">
+                                                   <ui:contents>
+                                                      <oa:messageStyledText id="SkillName" dataType="VARCHAR2" prompt="Skill Name" viewName="FwkTbxNewSkillsVO1" viewAttr="SkillName" maximumLength="60"/>
+                                                      <oa:messageRatingBar id="SkillRating" dataType="NUMBER" prompt="Skill Rating" viewName="FwkTbxNewEmpSkillsVO1" viewAttr="SkillRating" pickListViewDef="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewSkillRatingVO" pickListViewName="FwkTbxNewSkillRatingVO1" pickListDispAttr="RatingName" pickListValAttr="RatingId" readOnly="true"/>
+                                                      <oa:messageStyledText id="Proficiency" dataType="VARCHAR2" prompt="Proficiency" viewName="FwkTbxNewEmpSkillsDetVO1" viewAttr="Proficiency" maximumLength="60"/>
+                                                      <oa:messageStyledText id="Version" dataType="VARCHAR2" prompt="Version" viewName="FwkTbxNewEmpSkillsDetVO1" viewAttr="Version" maximumLength="60"/>
+                                                      <oa:messageStyledText id="BroadCategory" dataType="VARCHAR2" prompt="Broad Category" viewName="FwkTbxNewEmpSkillsDetVO1" viewAttr="BroadCategory" maximumLength="60"/>
+                                                      <oa:messageStyledText id="SkillCategory" dataType="VARCHAR2" prompt="Skill Category" viewName="FwkTbxNewEmpSkillsDetVO1" viewAttr="SkillCategory" maximumLength="60"/>
+                                                   </ui:contents>
+                                                </oa:table>
+                                             </ui:contents>
+                                          </oa:accordion>
+                                          <oa:accordion id="TrainingAccordionRN" prompt="Training">
+                                             <ui:contents>
+                                                <oa:flowLayout id="TrainingFlowLayoutRN" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial2.webui.FwkTbxNewEmpTrainingCO" childViewUsageName="FwkTbxNewEmpTrainingVO1" childViewAttrName="TrainingId">
+                                                   <ui:contents>
+                                                      <oa:rowLayout id="EmpTrainingRowRN">
+                                                         <ui:contents>
+                                                            <oa:messageStyledText id="TrainingName" viewName="FwkTbxNewEmpTrainingVO1" viewAttr="TrainingName" prompt="Name"/>
+                                                            <oa:messageStyledText id="TrainingStatus" viewName="FwkTbxNewEmpTrainingVO1" viewAttr="Status" prompt="Status"/>
+                                                         </ui:contents>
+                                                      </oa:rowLayout>
+                                                   </ui:contents>
+                                                </oa:flowLayout>
+                                             </ui:contents>
+                                          </oa:accordion>
+                                          <oa:accordion id="EduAccordionRN" prompt="Education">
+                                             <ui:contents>
+                                                <oa:flowLayout id="EduFlowLayoutRN" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial2.webui.FwkTbxNewEmpEduCO" childViewUsageName="FwkTbxNewEducationVO1" childViewAttrName="EducationId">
+                                                   <ui:contents>
+                                                      <oa:rowLayout id="EmpEduRowRN" hAlign="start">
+                                                         <ui:contents>
+                                                            <oa:messageStyledText id="EducationName" viewName="FwkTbxNewEducationVO1" viewAttr="EducationName" prompt="Name"/>
+                                                            <oa:messageStyledText id="EducationSpecial" viewName="FwkTbxNewEducationVO1" viewAttr="EducationSpecialization" prompt="Specialization"/>
+                                                            <oa:messageStyledText id="UniversityName" viewName="FwkTbxNewEducationVO1" viewAttr="UniversityName" prompt="College/University"/>
+                                                         </ui:contents>
+                                                      </oa:rowLayout>
+                                                   </ui:contents>
+                                                </oa:flowLayout>
+                                             </ui:contents>
+                                          </oa:accordion>
+                                          <oa:accordion id="ExpAccordionRN" prompt="Experience">
+                                             <ui:contents>
+                                                <oa:flowLayout id="ExpFlowRN" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial2.webui.FwkTbxNewEmpExpCO" childViewUsageName="FwkTbxNewExperienceVO1" childViewAttrName="ExperienceId">
+                                                   <ui:contents>
+                                                      <oa:rowLayout id="ExperienceRN" hAlign="start">
+                                                         <ui:contents>
+                                                            <oa:messageStyledText id="OrganizationName" viewName="FwkTbxNewExperienceVO1" viewAttr="OrganizationName" prompt="Organization"/>
+                                                            <oa:messageStyledText id="ExpDesignation" viewName="FwkTbxNewExperienceVO1" viewAttr="Designation" prompt="Designation"/>
+                                                            <oa:messageStyledText id="StartDate" viewName="FwkTbxNewExperienceVO1" viewAttr="StartDate" prompt="Start Date"/>
+                                                            <oa:messageStyledText id="EndDate" viewName="FwkTbxNewExperienceVO1" viewAttr="EndDate" prompt="End Date"/>
+                                                         </ui:contents>
+                                                      </oa:rowLayout>
+                                                   </ui:contents>
+                                                </oa:flowLayout>
+                                             </ui:contents>
+                                          </oa:accordion>
+                                          <oa:accordion id="AssetAccordionRN" prompt="Asset Information">
+                                             <ui:contents>
+                                                <oa:table id="FwkTbxNewAssetRN" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial2.webui.FwkTbxNewAssetCO" width="90%" queryByExampleEnabled="true" qbeCaseSensitiveSearch="true">
+                                                   <ui:contents>
+                                                      <oa:messageStyledText id="AssetId" viewName="FwkTbxNewAssetVO1" viewAttr="AssetId" prompt="ID" queryable="true"/>
+                                                      <oa:messageChoice id="AssetType" viewName="FwkTbxNewAssetVO1" viewAttr="AssetType" prompt="Type" queryable="true" sortState="yes" pickListViewName="FwkTbxNewAssetVO1" pickListDispAttr="AssetType" pickListValAttr="AssetType" disabled="true" rendered="true"/>
+                                                      <oa:messageStyledText id="ModelNumber" viewName="FwkTbxNewAssetVO1" viewAttr="ModelNumber" prompt="Model Number" queryable="true"/>
+                                                      <oa:messageStyledText id="InUseSince" viewName="FwkTbxNewAssetVO1" viewAttr="InUseSince" prompt="In Use Since" queryable="true"/>
+                                                   </ui:contents>
+                                                </oa:table>
+                                             </ui:contents>
+                                          </oa:accordion>
+                                       </ui:contents>
+                                    </oa:accordionLayout>
+                                 </ui:contents>
+                              </oa:header>
+                              <oa:header id="SecondSubTabRN" text="Employee Hirarchy">
+                                 <ui:contents>
+                                    <oa:hGrid id="OrgHgridRN" rowHeaderColumns="Name">
+                                       <ui:contents>
+                                          <oa:tree usage="hGrid" id="EmpHgridHierarchyRN" text="Name">
+                                             <members>
+                                                <oa:nodeDef id="Manager" viewName="FwkTbxEmployeeHgridVO1" viewAttr="FullName"/>
+                                                <oa:childNode id="childNode1" viewLinkAccessorName="EmployeeIdFwkTbxEmployeeHgridVO">
+                                                   <members>
+                                                      <oa:nodeDef id="nodeDef1" viewName="FwkTbxEmployeeHgridVO1" viewAttr="FullName"/>
+                                                      <oa:childNode id="childNode2" viewLinkAccessorName="EmployeeIdFwkTbxEmployeeHgridVO" ancestorNode="/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewEmpViewOnlyPG.EmpHgridHierarchyRN"/>
+                                                   </members>
+                                                </oa:childNode>
+                                             </members>
+                                          </oa:tree>
+                                          <oa:messageStyledText id="EmpGuid" viewName="FwkTbxNewEmployeeVO1" viewAttr="Guid" prompt="GUID"/>
+                                          <oa:messageStyledText id="EmpDesignation" viewName="FwkTbxNewEmployeeVO1" viewAttr="PositionCode" prompt="Designation"/>
+                                       </ui:contents>
+                                    </oa:hGrid>
+                                 </ui:contents>
+                              </oa:header>
+                           </ui:contents>
+                           <ui:subTabs>
+                              <oa:subTabBar id="subTabBar1">
+                                 <ui:contents>
+                                    <oa:link id="FirstSubTabLink" text="Profile"/>
+                                    <oa:link id="SecondSubTabLink" text="Organization"/>
+                                 </ui:contents>
+                              </oa:subTabBar>
+                           </ui:subTabs>
+                        </oa:subTabLayout>
+                     </ui:contents>
+                  </oa:stackLayout>
+               </ui:secondPanel>
+            </oa:panelSplitter>
+            <oa:pageButtonBar id="pageButtonBar">
+               <ui:contents>
+                  <oa:button id="backBtn" text="Return to Employee Search Page" prompt="Return to Employee Search Page" shortDesc="Return to Employee Search Page" destination="OA.jsp?page=/oracle/apps/fnd/framework/toolbox/tutorial2/webui/EmployeeSearchPG"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='GBK' ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+
+<Entity
+   Name="BgtestEO"
+   DBObjectType="table"
+   DBObjectName="BG_TEST"
+   AliasName="BgtestEO"
+   BindingStyle="OracleName"
+   UseGlueCode="false"
+   RowClass="oracle.apps.fnd.framework.toolbox.schema.server.BgtestEOImpl"
+   DefClass="oracle.apps.fnd.framework.server.OAEntityDefImpl"
+   CollClass="oracle.apps.fnd.framework.server.OAEntityCache" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <AttrArray Name="_publishEvents">
+      </AttrArray>
+      <Attr Name="_codeGenFlag2" Value="Access" />
+   </DesignTime>
+   <Attribute
+      Name="Id"
+      ColumnName="ID"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="BG_TEST"
+      PrimaryKey="true" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Name"
+      Precision="50"
+      ColumnName="NAME"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="BG_TEST" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="50" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Description"
+      Precision="100"
+      ColumnName="DESCRIPTION"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      SQLType="VARCHAR"
+      TableName="BG_TEST" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="100" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="Qty"
+      ColumnName="QTY"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="BG_TEST" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="CodeId"
+      ColumnName="CODE_ID"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="BG_TEST" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Attribute
+      Name="ChartOfAccountsId"
+      ColumnName="CHART_OF_ACCOUNTS_ID"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      SQLType="NUMERIC"
+      TableName="BG_TEST" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </Attribute>
+   <Key
+      Name="BgtesteoPrimaryKey" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.schema.server.BgtestEO.Id" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isPrimary" Value="true" />
+         <Attr Name="_DBObjectName" Value="BGTESTEO_PRIMARY_KEY" />
+      </DesignTime>
+   </Key>
+</Entity>

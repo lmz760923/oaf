@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!-- dbdrv: exec java oracle/jrad/tools/xml/importer XMLImporter.class java &phase=dat+24 checkfile:~PROD:~PATH:~FILE &fullpath:~PROD:~PATH:~FILE -username &un_apps -password &pw_apps -dbconnection &jdbc_db_addr -userId "1" -rootPackage /oracle/apps/~PROD -rootdir &fullpath:~PROD:mds:directory -->
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header: FwkTbxNewTrainingEnrollPG.xml 120.0.12020000.1 2020/01/10 13:09:07 spunam noship $">
+   <content>
+      <oa:pageLayout id="PageLayoutRN" amDefName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmployeeAM" windowTitle="Training Enrollment" title="Training Enroll">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:table id="TrainingEnrollTable" queryByExampleEnabled="true" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial2.webui.FwkTbxNewTrainingEnrollCO" qbeCaseSensitiveSearch="false">
+               <ui:contents>
+                  <oa:messageStyledText id="TrainingId" dataType="NUMBER" prompt="Training ID" viewName="FwkTbxNewTrainingVO1" viewAttr="TrainingId" queryable="true" sortState="yes"/>
+                  <oa:messageStyledText id="TrainingName" dataType="VARCHAR2" prompt="Training Name" viewName="FwkTbxNewTrainingVO1" viewAttr="TrainingName" maximumLength="60" queryable="true" sortState="yes"/>
+                  <oa:messageStyledText id="TrainingDescription" dataType="VARCHAR2" prompt="Training Description" viewName="FwkTbxNewTrainingVO1" viewAttr="TrainingDescription" maximumLength="500" queryable="true" sortState="yes"/>
+                  <oa:messageStyledText id="Mandatory" dataType="VARCHAR2" prompt="Mandatory" viewName="FwkTbxNewTrainingVO1" viewAttr="Mandatory" maximumLength="1" queryable="true" sortState="yes"/>
+                  <oa:messageStyledText id="TrainingStartDate" dataType="DATE" prompt="Training Start Date" viewName="FwkTbxNewTrainingVO1" viewAttr="TrainingStartDate" queryable="true" sortState="yes"/>
+                  <oa:messageStyledText id="TrainingEndDate" dataType="DATE" prompt="Training End Date" viewName="FwkTbxNewTrainingVO1" viewAttr="TrainingEndDate" queryable="true" sortState="yes"/>
+                  <oa:messageStyledText id="Instructor" dataType="VARCHAR2" prompt="Instructor" viewName="FwkTbxNewTrainingVO1" viewAttr="Instructor" maximumLength="60" queryable="true" sortState="yes"/>
+                  <oa:messageStyledText id="DurationInMin" dataType="NUMBER" prompt="Duration In Minutes" viewName="FwkTbxNewTrainingVO1" viewAttr="DurationInMin" queryable="true" sortState="yes"/>
+                  <oa:switcher id="EnrollSwitcher" viewName="FwkTbxNewTrainingVO1" viewAttr="EnrollSwitcher" prompt="Enroll">
+                     <ui:case name="EnrollDisabled">
+                        <oa:image id="EnrollDisabled" source="/OA_MEDIA/accept_dis.png" shortDesc="Already enrolled or completed this training" imageHeight="16" imageWidth="16"/>
+                     </ui:case>
+                     <ui:case name="EnrollEnabled">
+                        <oa:image id="EnrollEnabled" source="/OA_MEDIA/accept_ena.png" shortDesc="Click to enroll for the training" imageHeight="16" imageWidth="16">
+                           <ui:primaryClientAction>
+                              <ui:fireAction event="enrollTraining">
+                                 <ui:parameters>
+                                    <ui:parameter key="trainingId" value="${oa.FwkTbxNewTrainingVO1.TrainingId}"/>
+                                    <ui:parameter key="trainingName" value="${oa.FwkTbxNewTrainingVO1.TrainingName}"/>
+                                 </ui:parameters>
+                              </ui:fireAction>
+                           </ui:primaryClientAction>
+                        </oa:image>
+                     </ui:case>
+                  </oa:switcher>
+               </ui:contents>
+            </oa:table>
+            <oa:pageButtonBar id="pageButtonBar">
+               <ui:contents>
+                  <oa:button id="backBtn" text="Return to Miscelleneous Page" prompt="Return to Miscelleneous Page" shortDesc="Back" destination="OA.jsp?page=/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewEmpDetails"/>
+                  <oa:button id="backEmpSch" text="Return to Employee Search Page" prompt="Return to Employee Search Page" shortDesc="Return to Employee Search Page" destination="OA.jsp?page=/oracle/apps/fnd/framework/toolbox/tutorial2/webui/EmployeeSearchPG"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: EmpDesignationLOVAM.xml 120.0.12020000.1 2020/01/08 12:00:12 spunam noship $ -->
+
+<AppModule
+   Name="EmpDesignationLOVAM"
+   ComponentClass="oracle.apps.fnd.framework.toolbox.lov.server.EmpDesignationLOVAMImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_deployType" Value="0" />
+   </DesignTime>
+   <ViewUsage
+      Name="EmpDesignationLOVVO1"
+      ViewObjectName="oracle.apps.fnd.framework.toolbox.lov.server.EmpDesignationLOVVO" >
+   </ViewUsage>
+</AppModule>

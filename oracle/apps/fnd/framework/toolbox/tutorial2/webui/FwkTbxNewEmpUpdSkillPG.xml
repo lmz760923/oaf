@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!-- dbdrv: exec java oracle/jrad/tools/xml/importer XMLImporter.class java &phase=dat+24 checkfile:~PROD:~PATH:~FILE &fullpath:~PROD:~PATH:~FILE -username &un_apps -password &pw_apps -dbconnection &jdbc_db_addr -userId "1" -rootPackage /oracle/apps/~PROD -rootdir &fullpath:~PROD:mds:directory -->
+
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header: FwkTbxNewEmpUpdSkillPG.xml 120.0.12020000.1 2020/01/10 13:00:04 spunam noship $">
+   <content>
+      <oa:pageLayout id="PageLayoutRN" amDefName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpUpdateAM" title="Enroll New Skills" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial2.webui.FwkTbxNewEmpUpdSkillCO" windowTitle="Enroll New Skills">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:messageStyledText id="PageInfo" prompt="Enroll for New skills here. To enroll, just shuttle the skills from left to right." shortDesc="Enroll for New skills here. To enroll, just shuttle the skills from left to right."/>
+            <oa:rowLayout id="region1" hAlign="center">
+               <ui:contents>
+                  <oa:shuttle id="ShuttleRegion1">
+                     <ui:leading>
+                        <oa:list id="AvailableCoursesList" multiple="true" pickListViewName="FwkTbxNewSkillsAvailableToEnrollVO1" pickListDispAttr="SkillName" pickListValAttr="SkillId" shortDesc="Available Courses"/>
+                     </ui:leading>
+                     <ui:trailing>
+                        <oa:list id="CompletedCoursesList" shortDesc="Courses Completed"/>
+                     </ui:trailing>
+                  </oa:shuttle>
+               </ui:contents>
+            </oa:rowLayout>
+            <oa:pageButtonBar id="PageNavigationRN" extends="/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewEmpUpdPgNav"/>
+         </ui:contents>
+         <ui:location>
+            <oa:train id="EmpUpdSkillTrainLoc" extends="/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewUpdEmpTrain"/>
+         </ui:location>
+      </oa:pageLayout>
+   </content>
+</page>

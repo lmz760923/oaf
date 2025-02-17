@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: FwkTbxNewEmpTrainingVO.xml 120.0.12020000.1 2020/01/08 06:30:20 spunam noship $ -->
+
+<ViewObject
+   Name="FwkTbxNewEmpTrainingVO"
+   BindingStyle="OracleName"
+   CustomQuery="true"
+   RowClass="oracle.apps.fnd.framework.server.OAViewRowImpl"
+   ComponentClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingVOImpl"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+SELECT
+    ftnt.training_id,
+    ftnet.employee_id,
+    ftnet.status,
+    ftnet.start_date,
+    ftnet.enrolled_date,
+    ftnet.end_date,
+    ftnet.certification,
+    ftnt.training_name,
+    ftnt.training_description,
+    ftnt.training_start_date,
+    ftnt.training_end_date
+FROM
+    fwk_tbx_new_trainings      ftnt,
+    fwk_tbx_new_emp_training   ftnet
+WHERE
+    ftnt.training_id = ftnet.training_id
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isExpertMode" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <ViewAttribute
+      Name="TrainingId"
+      IsUpdateable="false"
+      IsPersistent="false"
+      IsNotNull="true"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="TRAINING_ID"
+      Expression="TRAINING_ID"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EmployeeId"
+      IsUpdateable="false"
+      IsPersistent="false"
+      IsNotNull="true"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="EMPLOYEE_ID"
+      Expression="EMPLOYEE_ID"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Status"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Precision="20"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="STATUS"
+      Expression="STATUS"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="20" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="StartDate"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      AliasName="START_DATE"
+      Expression="START_DATE"
+      SQLType="DATE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EnrolledDate"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      AliasName="ENROLLED_DATE"
+      Expression="ENROLLED_DATE"
+      SQLType="DATE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EndDate"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      AliasName="END_DATE"
+      Expression="END_DATE"
+      SQLType="DATE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Certification"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Precision="1"
+      Type="java.lang.String"
+      ColumnType="CHAR"
+      AliasName="CERTIFICATION"
+      Expression="CERTIFICATION"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="1" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TrainingName"
+      IsUpdateable="false"
+      IsPersistent="false"
+      IsNotNull="true"
+      Precision="60"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="TRAINING_NAME"
+      Expression="TRAINING_NAME"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="60" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TrainingDescription"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Precision="500"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="TRAINING_DESCRIPTION"
+      Expression="TRAINING_DESCRIPTION"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="500" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TrainingStartDate"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      AliasName="TRAINING_START_DATE"
+      Expression="TRAINING_START_DATE"
+      SQLType="DATE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TrainingEndDate"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      AliasName="TRAINING_END_DATE"
+      Expression="TRAINING_END_DATE"
+      SQLType="DATE" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="7" />
+      </DesignTime>
+   </ViewAttribute>
+   <AttrArray Name="KeyAttributes">
+      <Item Value="TrainingId" />
+   </AttrArray>
+</ViewObject>

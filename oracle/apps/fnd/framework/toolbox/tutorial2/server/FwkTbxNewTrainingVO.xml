@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: FwkTbxNewTrainingVO.xml 120.0.12020000.1 2020/01/08 07:39:17 spunam noship $ -->
+
+<ViewObject
+   Name="FwkTbxNewTrainingVO"
+   BindingStyle="OracleName"
+   CustomQuery="true"
+   RowClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewTrainingVORowImpl"
+   ComponentClass="oracle.apps.fnd.framework.server.OAViewObjectImpl"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+SELECT FwkTbxNewTrainingEO.TRAINING_ID, 
+       FwkTbxNewTrainingEO.TRAINING_NAME, 
+       FwkTbxNewTrainingEO.TRAINING_DESCRIPTION, 
+       FwkTbxNewTrainingEO.MANDATORY, 
+       FwkTbxNewTrainingEO.TRAINING_START_DATE, 
+       FwkTbxNewTrainingEO.TRAINING_END_DATE, 
+       FwkTbxNewTrainingEO.INSTRUCTOR, 
+       FwkTbxNewTrainingEO.DURATION_IN_MIN,
+     decode(nvl(to_char(FwkTbxNewEmpTrainingEO.EMPLOYEE_ID),      'N'), 'N', 'EnrollEnabled', 'EnrollDisabled') AS Enroll_SWITCHER
+FROM FWK_TBX_NEW_TRAININGS FwkTbxNewTrainingEO
+LEFT JOIN (SELECT * FROM FWK_TBX_NEW_EMP_TRAINING WHERE EMPLOYEE_ID = :1) FwkTbxNewEmpTrainingEO
+ON FwkTbxNewTrainingEO.TRAINING_ID = FwkTbxNewEmpTrainingEO.TRAINING_ID
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_isExpertMode" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_codeGenFlag2" Value="Access|VarAccess" />
+   </DesignTime>
+   <EntityUsage
+      Name="FwkTbxNewTrainingEO"
+      Entity="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewTrainingEO" >
+      <DesignTime>
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="TrainingId"
+      IsNotNull="true"
+      EntityAttrName="TrainingId"
+      EntityUsage="FwkTbxNewTrainingEO"
+      AliasName="TRAINING_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TrainingName"
+      IsNotNull="true"
+      EntityAttrName="TrainingName"
+      EntityUsage="FwkTbxNewTrainingEO"
+      AliasName="TRAINING_NAME" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TrainingDescription"
+      EntityAttrName="TrainingDescription"
+      EntityUsage="FwkTbxNewTrainingEO"
+      AliasName="TRAINING_DESCRIPTION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Mandatory"
+      EntityAttrName="Mandatory"
+      EntityUsage="FwkTbxNewTrainingEO"
+      AliasName="MANDATORY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TrainingStartDate"
+      EntityAttrName="TrainingStartDate"
+      EntityUsage="FwkTbxNewTrainingEO"
+      AliasName="TRAINING_START_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TrainingEndDate"
+      EntityAttrName="TrainingEndDate"
+      EntityUsage="FwkTbxNewTrainingEO"
+      AliasName="TRAINING_END_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Instructor"
+      EntityAttrName="Instructor"
+      EntityUsage="FwkTbxNewTrainingEO"
+      AliasName="INSTRUCTOR" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DurationInMin"
+      EntityAttrName="DurationInMin"
+      EntityUsage="FwkTbxNewTrainingEO"
+      AliasName="DURATION_IN_MIN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EnrollSwitcher"
+      IsPersistent="false"
+      Precision="14"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="ENROLL_SWITCHER"
+      Expression="ENROLL_SWITCHER"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="14" />
+      </DesignTime>
+   </ViewAttribute>
+</ViewObject>

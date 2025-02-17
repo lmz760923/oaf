@@ -1,0 +1,1401 @@
+<?xml version='1.0' encoding='GBK' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="InvoiceVO"
+   SelectList="InvoiceEO.INVOICE_ID, 
+       InvoiceEO.LAST_UPDATE_DATE, 
+       InvoiceEO.LAST_UPDATED_BY, 
+       InvoiceEO.VENDOR_ID, 
+       InvoiceEO.INVOICE_NUM, 
+       InvoiceEO.SET_OF_BOOKS_ID, 
+       InvoiceEO.INVOICE_CURRENCY_CODE, 
+       InvoiceEO.PAYMENT_CURRENCY_CODE, 
+       InvoiceEO.PAYMENT_CROSS_RATE, 
+       InvoiceEO.INVOICE_AMOUNT, 
+       InvoiceEO.VENDOR_SITE_ID, 
+       InvoiceEO.AMOUNT_PAID, 
+       InvoiceEO.DISCOUNT_AMOUNT_TAKEN, 
+       InvoiceEO.INVOICE_DATE, 
+       InvoiceEO.SOURCE, 
+       InvoiceEO.INVOICE_TYPE_LOOKUP_CODE, 
+       InvoiceEO.DESCRIPTION, 
+       InvoiceEO.BATCH_ID, 
+       InvoiceEO.AMOUNT_APPLICABLE_TO_DISCOUNT, 
+       InvoiceEO.TAX_AMOUNT, 
+       InvoiceEO.TERMS_ID, 
+       InvoiceEO.TERMS_DATE, 
+       InvoiceEO.PAYMENT_METHOD_LOOKUP_CODE, 
+       InvoiceEO.PAY_GROUP_LOOKUP_CODE, 
+       InvoiceEO.ACCTS_PAY_CODE_COMBINATION_ID, 
+       InvoiceEO.PAYMENT_STATUS_FLAG, 
+       InvoiceEO.CREATION_DATE, 
+       InvoiceEO.CREATED_BY, 
+       InvoiceEO.BASE_AMOUNT, 
+       InvoiceEO.VAT_CODE, 
+       InvoiceEO.LAST_UPDATE_LOGIN, 
+       InvoiceEO.EXCLUSIVE_PAYMENT_FLAG, 
+       InvoiceEO.PO_HEADER_ID, 
+       InvoiceEO.FREIGHT_AMOUNT, 
+       InvoiceEO.GOODS_RECEIVED_DATE, 
+       InvoiceEO.INVOICE_RECEIVED_DATE, 
+       InvoiceEO.VOUCHER_NUM, 
+       InvoiceEO.APPROVED_AMOUNT, 
+       InvoiceEO.RECURRING_PAYMENT_ID, 
+       InvoiceEO.EXCHANGE_RATE, 
+       InvoiceEO.EXCHANGE_RATE_TYPE, 
+       InvoiceEO.EXCHANGE_DATE, 
+       InvoiceEO.EARLIEST_SETTLEMENT_DATE, 
+       InvoiceEO.ORIGINAL_PREPAYMENT_AMOUNT, 
+       InvoiceEO.DOC_SEQUENCE_ID, 
+       InvoiceEO.DOC_SEQUENCE_VALUE, 
+       InvoiceEO.DOC_CATEGORY_CODE, 
+       InvoiceEO.ATTRIBUTE1, 
+       InvoiceEO.ATTRIBUTE2, 
+       InvoiceEO.ATTRIBUTE3, 
+       InvoiceEO.ATTRIBUTE4, 
+       InvoiceEO.ATTRIBUTE5, 
+       InvoiceEO.ATTRIBUTE6, 
+       InvoiceEO.ATTRIBUTE7, 
+       InvoiceEO.ATTRIBUTE8, 
+       InvoiceEO.ATTRIBUTE9, 
+       InvoiceEO.ATTRIBUTE10, 
+       InvoiceEO.ATTRIBUTE11, 
+       InvoiceEO.ATTRIBUTE12, 
+       InvoiceEO.ATTRIBUTE13, 
+       InvoiceEO.ATTRIBUTE14, 
+       InvoiceEO.ATTRIBUTE15, 
+       InvoiceEO.ATTRIBUTE_CATEGORY, 
+       InvoiceEO.APPROVAL_STATUS, 
+       InvoiceEO.APPROVAL_DESCRIPTION, 
+       InvoiceEO.INVOICE_DISTRIBUTION_TOTAL, 
+       InvoiceEO.POSTING_STATUS, 
+       InvoiceEO.PREPAY_FLAG, 
+       InvoiceEO.AUTHORIZED_BY, 
+       InvoiceEO.CANCELLED_DATE, 
+       InvoiceEO.CANCELLED_BY, 
+       InvoiceEO.CANCELLED_AMOUNT, 
+       InvoiceEO.TEMP_CANCELLED_AMOUNT, 
+       InvoiceEO.PROJECT_ACCOUNTING_CONTEXT, 
+       InvoiceEO.USSGL_TRANSACTION_CODE, 
+       InvoiceEO.USSGL_TRX_CODE_CONTEXT, 
+       InvoiceEO.PROJECT_ID, 
+       InvoiceEO.TASK_ID, 
+       InvoiceEO.EXPENDITURE_TYPE, 
+       InvoiceEO.EXPENDITURE_ITEM_DATE, 
+       InvoiceEO.PA_QUANTITY, 
+       InvoiceEO.EXPENDITURE_ORGANIZATION_ID, 
+       InvoiceEO.PA_DEFAULT_DIST_CCID, 
+       InvoiceEO.VENDOR_PREPAY_AMOUNT, 
+       InvoiceEO.PAYMENT_AMOUNT_TOTAL, 
+       InvoiceEO.AWT_FLAG, 
+       InvoiceEO.AWT_GROUP_ID, 
+       InvoiceEO.REFERENCE_1, 
+       InvoiceEO.REFERENCE_2, 
+       InvoiceEO.ORG_ID, 
+       InvoiceEO.PRE_WITHHOLDING_AMOUNT, 
+       InvoiceEO.GLOBAL_ATTRIBUTE_CATEGORY, 
+       InvoiceEO.GLOBAL_ATTRIBUTE1, 
+       InvoiceEO.GLOBAL_ATTRIBUTE2, 
+       InvoiceEO.GLOBAL_ATTRIBUTE3, 
+       InvoiceEO.GLOBAL_ATTRIBUTE4, 
+       InvoiceEO.GLOBAL_ATTRIBUTE5, 
+       InvoiceEO.GLOBAL_ATTRIBUTE6, 
+       InvoiceEO.GLOBAL_ATTRIBUTE7, 
+       InvoiceEO.GLOBAL_ATTRIBUTE8, 
+       InvoiceEO.GLOBAL_ATTRIBUTE9, 
+       InvoiceEO.GLOBAL_ATTRIBUTE10, 
+       InvoiceEO.GLOBAL_ATTRIBUTE11, 
+       InvoiceEO.GLOBAL_ATTRIBUTE12, 
+       InvoiceEO.GLOBAL_ATTRIBUTE13, 
+       InvoiceEO.GLOBAL_ATTRIBUTE14, 
+       InvoiceEO.GLOBAL_ATTRIBUTE15, 
+       InvoiceEO.GLOBAL_ATTRIBUTE16, 
+       InvoiceEO.GLOBAL_ATTRIBUTE17, 
+       InvoiceEO.GLOBAL_ATTRIBUTE18, 
+       InvoiceEO.GLOBAL_ATTRIBUTE19, 
+       InvoiceEO.GLOBAL_ATTRIBUTE20, 
+       InvoiceEO.AUTO_TAX_CALC_FLAG, 
+       InvoiceEO.PAYMENT_CROSS_RATE_TYPE, 
+       InvoiceEO.PAYMENT_CROSS_RATE_DATE, 
+       InvoiceEO.PAY_CURR_INVOICE_AMOUNT, 
+       InvoiceEO.MRC_BASE_AMOUNT, 
+       InvoiceEO.MRC_EXCHANGE_RATE, 
+       InvoiceEO.MRC_EXCHANGE_RATE_TYPE, 
+       InvoiceEO.MRC_EXCHANGE_DATE, 
+       InvoiceEO.MRC_POSTING_STATUS, 
+       InvoiceEO.GL_DATE, 
+       InvoiceEO.AWARD_ID, 
+       InvoiceEO.PAID_ON_BEHALF_EMPLOYEE_ID, 
+       InvoiceEO.AMT_DUE_CCARD_COMPANY, 
+       InvoiceEO.AMT_DUE_EMPLOYEE, 
+       InvoiceEO.APPROVAL_READY_FLAG, 
+       InvoiceEO.APPROVAL_ITERATION, 
+       InvoiceEO.WFAPPROVAL_STATUS, 
+       InvoiceEO.REQUESTER_ID, 
+       InvoiceEO.VALIDATION_REQUEST_ID, 
+       InvoiceEO.VALIDATED_TAX_AMOUNT, 
+       InvoiceEO.QUICK_CREDIT, 
+       InvoiceEO.CREDITED_INVOICE_ID, 
+       InvoiceEO.DISTRIBUTION_SET_ID, 
+       InvoiceEO.APPLICATION_ID, 
+       InvoiceEO.PRODUCT_TABLE, 
+       InvoiceEO.REFERENCE_KEY1, 
+       InvoiceEO.REFERENCE_KEY2, 
+       InvoiceEO.REFERENCE_KEY3, 
+       InvoiceEO.REFERENCE_KEY4, 
+       InvoiceEO.REFERENCE_KEY5, 
+       InvoiceEO.TOTAL_TAX_AMOUNT, 
+       InvoiceEO.SELF_ASSESSED_TAX_AMOUNT, 
+       InvoiceEO.TAX_RELATED_INVOICE_ID, 
+       InvoiceEO.TRX_BUSINESS_CATEGORY, 
+       InvoiceEO.USER_DEFINED_FISC_CLASS, 
+       InvoiceEO.TAXATION_COUNTRY, 
+       InvoiceEO.DOCUMENT_SUB_TYPE, 
+       InvoiceEO.SUPPLIER_TAX_INVOICE_NUMBER, 
+       InvoiceEO.SUPPLIER_TAX_INVOICE_DATE, 
+       InvoiceEO.SUPPLIER_TAX_EXCHANGE_RATE, 
+       InvoiceEO.TAX_INVOICE_RECORDING_DATE, 
+       InvoiceEO.TAX_INVOICE_INTERNAL_SEQ, 
+       InvoiceEO.LEGAL_ENTITY_ID, 
+       InvoiceEO.HISTORICAL_FLAG, 
+       InvoiceEO.FORCE_REVALIDATION_FLAG, 
+       InvoiceEO.BANK_CHARGE_BEARER, 
+       InvoiceEO.REMITTANCE_MESSAGE1, 
+       InvoiceEO.REMITTANCE_MESSAGE2, 
+       InvoiceEO.REMITTANCE_MESSAGE3, 
+       InvoiceEO.UNIQUE_REMITTANCE_IDENTIFIER, 
+       InvoiceEO.URI_CHECK_DIGIT, 
+       InvoiceEO.SETTLEMENT_PRIORITY, 
+       InvoiceEO.PAYMENT_REASON_CODE, 
+       InvoiceEO.PAYMENT_REASON_COMMENTS, 
+       InvoiceEO.PAYMENT_METHOD_CODE, 
+       InvoiceEO.DELIVERY_CHANNEL_CODE, 
+       InvoiceEO.QUICK_PO_HEADER_ID, 
+       InvoiceEO.NET_OF_RETAINAGE_FLAG, 
+       InvoiceEO.RELEASE_AMOUNT_NET_OF_TAX, 
+       InvoiceEO.CONTROL_AMOUNT, 
+       InvoiceEO.PARTY_ID, 
+       InvoiceEO.PARTY_SITE_ID, 
+       InvoiceEO.PAY_PROC_TRXN_TYPE_CODE, 
+       InvoiceEO.PAYMENT_FUNCTION, 
+       InvoiceEO.CUST_REGISTRATION_CODE, 
+       InvoiceEO.CUST_REGISTRATION_NUMBER, 
+       InvoiceEO.PORT_OF_ENTRY_CODE, 
+       InvoiceEO.EXTERNAL_BANK_ACCOUNT_ID, 
+       InvoiceEO.VENDOR_CONTACT_ID, 
+       InvoiceEO.INTERNAL_CONTACT_EMAIL, 
+       InvoiceEO.DISC_IS_INV_LESS_TAX_FLAG, 
+       InvoiceEO.EXCLUDE_FREIGHT_FROM_DISCOUNT, 
+       InvoiceEO.PAY_AWT_GROUP_ID, 
+       InvoiceEO.ORIGINAL_INVOICE_AMOUNT, 
+       InvoiceEO.DISPUTE_REASON, 
+       InvoiceEO.REMIT_TO_SUPPLIER_NAME, 
+       InvoiceEO.REMIT_TO_SUPPLIER_ID, 
+       InvoiceEO.REMIT_TO_SUPPLIER_SITE, 
+       InvoiceEO.REMIT_TO_SUPPLIER_SITE_ID, 
+       InvoiceEO.RELATIONSHIP_ID, 
+       InvoiceEO.PO_MATCHED_FLAG, 
+       InvoiceEO.VALIDATION_WORKER_ID, 
+       InvoiceEO.PAY_GROUP_LOOKUP_CODE#1"
+   FromList="AP.AP_INVOICES_ALL InvoiceEO"
+   BindingStyle="OracleName"
+   CustomQuery="false"
+   RowClass="oracle.apps.fnd.framework.toolbox.tutorial.server.InvoiceVORowImpl"
+   ComponentClass="oracle.apps.fnd.framework.toolbox.tutorial.server.InvoiceVOImpl"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <EntityUsage
+      Name="InvoiceEO"
+      Entity="oracle.apps.fnd.framework.toolbox.schema.server.InvoiceEO" >
+      <DesignTime>
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="InvoiceId"
+      IsNotNull="true"
+      EntityAttrName="InvoiceId"
+      EntityUsage="InvoiceEO"
+      AliasName="INVOICE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateDate"
+      IsNotNull="true"
+      EntityAttrName="LastUpdateDate"
+      EntityUsage="InvoiceEO"
+      AliasName="LAST_UPDATE_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdatedBy"
+      IsNotNull="true"
+      EntityAttrName="LastUpdatedBy"
+      EntityUsage="InvoiceEO"
+      AliasName="LAST_UPDATED_BY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="VendorId"
+      EntityAttrName="VendorId"
+      EntityUsage="InvoiceEO"
+      AliasName="VENDOR_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvoiceNum"
+      IsNotNull="true"
+      EntityAttrName="InvoiceNum"
+      EntityUsage="InvoiceEO"
+      AliasName="INVOICE_NUM" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SetOfBooksId"
+      IsNotNull="true"
+      EntityAttrName="SetOfBooksId"
+      EntityUsage="InvoiceEO"
+      AliasName="SET_OF_BOOKS_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvoiceCurrencyCode"
+      IsNotNull="true"
+      DefaultValue="CNY"
+      EntityAttrName="InvoiceCurrencyCode"
+      EntityUsage="InvoiceEO"
+      AliasName="INVOICE_CURRENCY_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaymentCurrencyCode"
+      IsNotNull="true"
+      EntityAttrName="PaymentCurrencyCode"
+      EntityUsage="InvoiceEO"
+      AliasName="PAYMENT_CURRENCY_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaymentCrossRate"
+      IsNotNull="true"
+      EntityAttrName="PaymentCrossRate"
+      EntityUsage="InvoiceEO"
+      AliasName="PAYMENT_CROSS_RATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvoiceAmount"
+      EntityAttrName="InvoiceAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="INVOICE_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="VendorSiteId"
+      EntityAttrName="VendorSiteId"
+      EntityUsage="InvoiceEO"
+      AliasName="VENDOR_SITE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AmountPaid"
+      EntityAttrName="AmountPaid"
+      EntityUsage="InvoiceEO"
+      AliasName="AMOUNT_PAID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DiscountAmountTaken"
+      EntityAttrName="DiscountAmountTaken"
+      EntityUsage="InvoiceEO"
+      AliasName="DISCOUNT_AMOUNT_TAKEN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvoiceDate"
+      EntityAttrName="InvoiceDate"
+      EntityUsage="InvoiceEO"
+      AliasName="INVOICE_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Source"
+      EntityAttrName="Source"
+      EntityUsage="InvoiceEO"
+      AliasName="SOURCE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvoiceTypeLookupCode"
+      EntityAttrName="InvoiceTypeLookupCode"
+      EntityUsage="InvoiceEO"
+      AliasName="INVOICE_TYPE_LOOKUP_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Description"
+      EntityAttrName="Description"
+      EntityUsage="InvoiceEO"
+      AliasName="DESCRIPTION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="BatchId"
+      EntityAttrName="BatchId"
+      EntityUsage="InvoiceEO"
+      AliasName="BATCH_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AmountApplicableToDiscount"
+      EntityAttrName="AmountApplicableToDiscount"
+      EntityUsage="InvoiceEO"
+      AliasName="AMOUNT_APPLICABLE_TO_DISCOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TaxAmount"
+      EntityAttrName="TaxAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="TAX_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TermsId"
+      EntityAttrName="TermsId"
+      EntityUsage="InvoiceEO"
+      AliasName="TERMS_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TermsDate"
+      EntityAttrName="TermsDate"
+      EntityUsage="InvoiceEO"
+      AliasName="TERMS_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaymentMethodLookupCode"
+      EntityAttrName="PaymentMethodLookupCode"
+      EntityUsage="InvoiceEO"
+      AliasName="PAYMENT_METHOD_LOOKUP_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PayGroupLookupCode"
+      EntityAttrName="PayGroupLookupCode"
+      EntityUsage="InvoiceEO"
+      AliasName="PAY_GROUP_LOOKUP_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AcctsPayCodeCombinationId"
+      EntityAttrName="AcctsPayCodeCombinationId"
+      EntityUsage="InvoiceEO"
+      AliasName="ACCTS_PAY_CODE_COMBINATION_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaymentStatusFlag"
+      EntityAttrName="PaymentStatusFlag"
+      EntityUsage="InvoiceEO"
+      AliasName="PAYMENT_STATUS_FLAG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreationDate"
+      EntityAttrName="CreationDate"
+      EntityUsage="InvoiceEO"
+      AliasName="CREATION_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreatedBy"
+      EntityAttrName="CreatedBy"
+      EntityUsage="InvoiceEO"
+      AliasName="CREATED_BY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="BaseAmount"
+      EntityAttrName="BaseAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="BASE_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="VatCode"
+      EntityAttrName="VatCode"
+      EntityUsage="InvoiceEO"
+      AliasName="VAT_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateLogin"
+      EntityAttrName="LastUpdateLogin"
+      EntityUsage="InvoiceEO"
+      AliasName="LAST_UPDATE_LOGIN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ExclusivePaymentFlag"
+      EntityAttrName="ExclusivePaymentFlag"
+      EntityUsage="InvoiceEO"
+      AliasName="EXCLUSIVE_PAYMENT_FLAG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PoHeaderId"
+      EntityAttrName="PoHeaderId"
+      EntityUsage="InvoiceEO"
+      AliasName="PO_HEADER_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="FreightAmount"
+      EntityAttrName="FreightAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="FREIGHT_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GoodsReceivedDate"
+      EntityAttrName="GoodsReceivedDate"
+      EntityUsage="InvoiceEO"
+      AliasName="GOODS_RECEIVED_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvoiceReceivedDate"
+      EntityAttrName="InvoiceReceivedDate"
+      EntityUsage="InvoiceEO"
+      AliasName="INVOICE_RECEIVED_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="VoucherNum"
+      EntityAttrName="VoucherNum"
+      EntityUsage="InvoiceEO"
+      AliasName="VOUCHER_NUM" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ApprovedAmount"
+      EntityAttrName="ApprovedAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="APPROVED_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="RecurringPaymentId"
+      EntityAttrName="RecurringPaymentId"
+      EntityUsage="InvoiceEO"
+      AliasName="RECURRING_PAYMENT_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ExchangeRate"
+      EntityAttrName="ExchangeRate"
+      EntityUsage="InvoiceEO"
+      AliasName="EXCHANGE_RATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ExchangeRateType"
+      EntityAttrName="ExchangeRateType"
+      EntityUsage="InvoiceEO"
+      AliasName="EXCHANGE_RATE_TYPE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ExchangeDate"
+      EntityAttrName="ExchangeDate"
+      EntityUsage="InvoiceEO"
+      AliasName="EXCHANGE_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EarliestSettlementDate"
+      EntityAttrName="EarliestSettlementDate"
+      EntityUsage="InvoiceEO"
+      AliasName="EARLIEST_SETTLEMENT_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="OriginalPrepaymentAmount"
+      EntityAttrName="OriginalPrepaymentAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="ORIGINAL_PREPAYMENT_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DocSequenceId"
+      EntityAttrName="DocSequenceId"
+      EntityUsage="InvoiceEO"
+      AliasName="DOC_SEQUENCE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DocSequenceValue"
+      EntityAttrName="DocSequenceValue"
+      EntityUsage="InvoiceEO"
+      AliasName="DOC_SEQUENCE_VALUE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DocCategoryCode"
+      EntityAttrName="DocCategoryCode"
+      EntityUsage="InvoiceEO"
+      AliasName="DOC_CATEGORY_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute1"
+      EntityAttrName="Attribute1"
+      EntityUsage="InvoiceEO"
+      AliasName="ATTRIBUTE1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute2"
+      EntityAttrName="Attribute2"
+      EntityUsage="InvoiceEO"
+      AliasName="ATTRIBUTE2" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute3"
+      EntityAttrName="Attribute3"
+      EntityUsage="InvoiceEO"
+      AliasName="ATTRIBUTE3" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute4"
+      EntityAttrName="Attribute4"
+      EntityUsage="InvoiceEO"
+      AliasName="ATTRIBUTE4" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute5"
+      EntityAttrName="Attribute5"
+      EntityUsage="InvoiceEO"
+      AliasName="ATTRIBUTE5" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute6"
+      EntityAttrName="Attribute6"
+      EntityUsage="InvoiceEO"
+      AliasName="ATTRIBUTE6" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute7"
+      EntityAttrName="Attribute7"
+      EntityUsage="InvoiceEO"
+      AliasName="ATTRIBUTE7" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute8"
+      EntityAttrName="Attribute8"
+      EntityUsage="InvoiceEO"
+      AliasName="ATTRIBUTE8" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute9"
+      EntityAttrName="Attribute9"
+      EntityUsage="InvoiceEO"
+      AliasName="ATTRIBUTE9" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute10"
+      EntityAttrName="Attribute10"
+      EntityUsage="InvoiceEO"
+      AliasName="ATTRIBUTE10" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute11"
+      EntityAttrName="Attribute11"
+      EntityUsage="InvoiceEO"
+      AliasName="ATTRIBUTE11" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute12"
+      EntityAttrName="Attribute12"
+      EntityUsage="InvoiceEO"
+      AliasName="ATTRIBUTE12" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute13"
+      EntityAttrName="Attribute13"
+      EntityUsage="InvoiceEO"
+      AliasName="ATTRIBUTE13" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute14"
+      EntityAttrName="Attribute14"
+      EntityUsage="InvoiceEO"
+      AliasName="ATTRIBUTE14" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute15"
+      EntityAttrName="Attribute15"
+      EntityUsage="InvoiceEO"
+      AliasName="ATTRIBUTE15" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AttributeCategory"
+      EntityAttrName="AttributeCategory"
+      EntityUsage="InvoiceEO"
+      AliasName="ATTRIBUTE_CATEGORY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ApprovalStatus"
+      EntityAttrName="ApprovalStatus"
+      EntityUsage="InvoiceEO"
+      AliasName="APPROVAL_STATUS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ApprovalDescription"
+      EntityAttrName="ApprovalDescription"
+      EntityUsage="InvoiceEO"
+      AliasName="APPROVAL_DESCRIPTION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InvoiceDistributionTotal"
+      EntityAttrName="InvoiceDistributionTotal"
+      EntityUsage="InvoiceEO"
+      AliasName="INVOICE_DISTRIBUTION_TOTAL" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PostingStatus"
+      EntityAttrName="PostingStatus"
+      EntityUsage="InvoiceEO"
+      AliasName="POSTING_STATUS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PrepayFlag"
+      EntityAttrName="PrepayFlag"
+      EntityUsage="InvoiceEO"
+      AliasName="PREPAY_FLAG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AuthorizedBy"
+      EntityAttrName="AuthorizedBy"
+      EntityUsage="InvoiceEO"
+      AliasName="AUTHORIZED_BY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CancelledDate"
+      EntityAttrName="CancelledDate"
+      EntityUsage="InvoiceEO"
+      AliasName="CANCELLED_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CancelledBy"
+      EntityAttrName="CancelledBy"
+      EntityUsage="InvoiceEO"
+      AliasName="CANCELLED_BY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CancelledAmount"
+      EntityAttrName="CancelledAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="CANCELLED_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TempCancelledAmount"
+      EntityAttrName="TempCancelledAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="TEMP_CANCELLED_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ProjectAccountingContext"
+      EntityAttrName="ProjectAccountingContext"
+      EntityUsage="InvoiceEO"
+      AliasName="PROJECT_ACCOUNTING_CONTEXT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="UssglTransactionCode"
+      EntityAttrName="UssglTransactionCode"
+      EntityUsage="InvoiceEO"
+      AliasName="USSGL_TRANSACTION_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="UssglTrxCodeContext"
+      EntityAttrName="UssglTrxCodeContext"
+      EntityUsage="InvoiceEO"
+      AliasName="USSGL_TRX_CODE_CONTEXT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ProjectId"
+      EntityAttrName="ProjectId"
+      EntityUsage="InvoiceEO"
+      AliasName="PROJECT_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TaskId"
+      EntityAttrName="TaskId"
+      EntityUsage="InvoiceEO"
+      AliasName="TASK_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ExpenditureType"
+      EntityAttrName="ExpenditureType"
+      EntityUsage="InvoiceEO"
+      AliasName="EXPENDITURE_TYPE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ExpenditureItemDate"
+      EntityAttrName="ExpenditureItemDate"
+      EntityUsage="InvoiceEO"
+      AliasName="EXPENDITURE_ITEM_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaQuantity"
+      EntityAttrName="PaQuantity"
+      EntityUsage="InvoiceEO"
+      AliasName="PA_QUANTITY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ExpenditureOrganizationId"
+      EntityAttrName="ExpenditureOrganizationId"
+      EntityUsage="InvoiceEO"
+      AliasName="EXPENDITURE_ORGANIZATION_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaDefaultDistCcid"
+      EntityAttrName="PaDefaultDistCcid"
+      EntityUsage="InvoiceEO"
+      AliasName="PA_DEFAULT_DIST_CCID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="VendorPrepayAmount"
+      EntityAttrName="VendorPrepayAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="VENDOR_PREPAY_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaymentAmountTotal"
+      EntityAttrName="PaymentAmountTotal"
+      EntityUsage="InvoiceEO"
+      AliasName="PAYMENT_AMOUNT_TOTAL" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AwtFlag"
+      EntityAttrName="AwtFlag"
+      EntityUsage="InvoiceEO"
+      AliasName="AWT_FLAG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AwtGroupId"
+      EntityAttrName="AwtGroupId"
+      EntityUsage="InvoiceEO"
+      AliasName="AWT_GROUP_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Reference1"
+      EntityAttrName="Reference1"
+      EntityUsage="InvoiceEO"
+      AliasName="REFERENCE_1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Reference2"
+      EntityAttrName="Reference2"
+      EntityUsage="InvoiceEO"
+      AliasName="REFERENCE_2" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="OrgId"
+      EntityAttrName="OrgId"
+      EntityUsage="InvoiceEO"
+      AliasName="ORG_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PreWithholdingAmount"
+      EntityAttrName="PreWithholdingAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="PRE_WITHHOLDING_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttributeCategory"
+      EntityAttrName="GlobalAttributeCategory"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE_CATEGORY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute1"
+      EntityAttrName="GlobalAttribute1"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute2"
+      EntityAttrName="GlobalAttribute2"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE2" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute3"
+      EntityAttrName="GlobalAttribute3"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE3" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute4"
+      EntityAttrName="GlobalAttribute4"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE4" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute5"
+      EntityAttrName="GlobalAttribute5"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE5" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute6"
+      EntityAttrName="GlobalAttribute6"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE6" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute7"
+      EntityAttrName="GlobalAttribute7"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE7" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute8"
+      EntityAttrName="GlobalAttribute8"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE8" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute9"
+      EntityAttrName="GlobalAttribute9"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE9" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute10"
+      EntityAttrName="GlobalAttribute10"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE10" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute11"
+      EntityAttrName="GlobalAttribute11"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE11" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute12"
+      EntityAttrName="GlobalAttribute12"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE12" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute13"
+      EntityAttrName="GlobalAttribute13"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE13" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute14"
+      EntityAttrName="GlobalAttribute14"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE14" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute15"
+      EntityAttrName="GlobalAttribute15"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE15" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute16"
+      EntityAttrName="GlobalAttribute16"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE16" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute17"
+      EntityAttrName="GlobalAttribute17"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE17" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute18"
+      EntityAttrName="GlobalAttribute18"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE18" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute19"
+      EntityAttrName="GlobalAttribute19"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE19" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlobalAttribute20"
+      EntityAttrName="GlobalAttribute20"
+      EntityUsage="InvoiceEO"
+      AliasName="GLOBAL_ATTRIBUTE20" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AutoTaxCalcFlag"
+      EntityAttrName="AutoTaxCalcFlag"
+      EntityUsage="InvoiceEO"
+      AliasName="AUTO_TAX_CALC_FLAG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaymentCrossRateType"
+      EntityAttrName="PaymentCrossRateType"
+      EntityUsage="InvoiceEO"
+      AliasName="PAYMENT_CROSS_RATE_TYPE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaymentCrossRateDate"
+      EntityAttrName="PaymentCrossRateDate"
+      EntityUsage="InvoiceEO"
+      AliasName="PAYMENT_CROSS_RATE_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PayCurrInvoiceAmount"
+      EntityAttrName="PayCurrInvoiceAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="PAY_CURR_INVOICE_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="MrcBaseAmount"
+      EntityAttrName="MrcBaseAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="MRC_BASE_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="MrcExchangeRate"
+      EntityAttrName="MrcExchangeRate"
+      EntityUsage="InvoiceEO"
+      AliasName="MRC_EXCHANGE_RATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="MrcExchangeRateType"
+      EntityAttrName="MrcExchangeRateType"
+      EntityUsage="InvoiceEO"
+      AliasName="MRC_EXCHANGE_RATE_TYPE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="MrcExchangeDate"
+      EntityAttrName="MrcExchangeDate"
+      EntityUsage="InvoiceEO"
+      AliasName="MRC_EXCHANGE_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="MrcPostingStatus"
+      EntityAttrName="MrcPostingStatus"
+      EntityUsage="InvoiceEO"
+      AliasName="MRC_POSTING_STATUS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="GlDate"
+      IsNotNull="true"
+      EntityAttrName="GlDate"
+      EntityUsage="InvoiceEO"
+      AliasName="GL_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AwardId"
+      EntityAttrName="AwardId"
+      EntityUsage="InvoiceEO"
+      AliasName="AWARD_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaidOnBehalfEmployeeId"
+      EntityAttrName="PaidOnBehalfEmployeeId"
+      EntityUsage="InvoiceEO"
+      AliasName="PAID_ON_BEHALF_EMPLOYEE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AmtDueCcardCompany"
+      EntityAttrName="AmtDueCcardCompany"
+      EntityUsage="InvoiceEO"
+      AliasName="AMT_DUE_CCARD_COMPANY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AmtDueEmployee"
+      EntityAttrName="AmtDueEmployee"
+      EntityUsage="InvoiceEO"
+      AliasName="AMT_DUE_EMPLOYEE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ApprovalReadyFlag"
+      IsNotNull="true"
+      EntityAttrName="ApprovalReadyFlag"
+      EntityUsage="InvoiceEO"
+      AliasName="APPROVAL_READY_FLAG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ApprovalIteration"
+      EntityAttrName="ApprovalIteration"
+      EntityUsage="InvoiceEO"
+      AliasName="APPROVAL_ITERATION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="WfapprovalStatus"
+      IsNotNull="true"
+      EntityAttrName="WfapprovalStatus"
+      EntityUsage="InvoiceEO"
+      AliasName="WFAPPROVAL_STATUS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="RequesterId"
+      EntityAttrName="RequesterId"
+      EntityUsage="InvoiceEO"
+      AliasName="REQUESTER_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ValidationRequestId"
+      EntityAttrName="ValidationRequestId"
+      EntityUsage="InvoiceEO"
+      AliasName="VALIDATION_REQUEST_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ValidatedTaxAmount"
+      EntityAttrName="ValidatedTaxAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="VALIDATED_TAX_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="QuickCredit"
+      EntityAttrName="QuickCredit"
+      EntityUsage="InvoiceEO"
+      AliasName="QUICK_CREDIT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreditedInvoiceId"
+      EntityAttrName="CreditedInvoiceId"
+      EntityUsage="InvoiceEO"
+      AliasName="CREDITED_INVOICE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DistributionSetId"
+      EntityAttrName="DistributionSetId"
+      EntityUsage="InvoiceEO"
+      AliasName="DISTRIBUTION_SET_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ApplicationId"
+      EntityAttrName="ApplicationId"
+      EntityUsage="InvoiceEO"
+      AliasName="APPLICATION_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ProductTable"
+      EntityAttrName="ProductTable"
+      EntityUsage="InvoiceEO"
+      AliasName="PRODUCT_TABLE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ReferenceKey1"
+      EntityAttrName="ReferenceKey1"
+      EntityUsage="InvoiceEO"
+      AliasName="REFERENCE_KEY1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ReferenceKey2"
+      EntityAttrName="ReferenceKey2"
+      EntityUsage="InvoiceEO"
+      AliasName="REFERENCE_KEY2" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ReferenceKey3"
+      EntityAttrName="ReferenceKey3"
+      EntityUsage="InvoiceEO"
+      AliasName="REFERENCE_KEY3" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ReferenceKey4"
+      EntityAttrName="ReferenceKey4"
+      EntityUsage="InvoiceEO"
+      AliasName="REFERENCE_KEY4" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ReferenceKey5"
+      EntityAttrName="ReferenceKey5"
+      EntityUsage="InvoiceEO"
+      AliasName="REFERENCE_KEY5" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TotalTaxAmount"
+      EntityAttrName="TotalTaxAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="TOTAL_TAX_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SelfAssessedTaxAmount"
+      EntityAttrName="SelfAssessedTaxAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="SELF_ASSESSED_TAX_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TaxRelatedInvoiceId"
+      EntityAttrName="TaxRelatedInvoiceId"
+      EntityUsage="InvoiceEO"
+      AliasName="TAX_RELATED_INVOICE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TrxBusinessCategory"
+      EntityAttrName="TrxBusinessCategory"
+      EntityUsage="InvoiceEO"
+      AliasName="TRX_BUSINESS_CATEGORY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="UserDefinedFiscClass"
+      EntityAttrName="UserDefinedFiscClass"
+      EntityUsage="InvoiceEO"
+      AliasName="USER_DEFINED_FISC_CLASS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TaxationCountry"
+      EntityAttrName="TaxationCountry"
+      EntityUsage="InvoiceEO"
+      AliasName="TAXATION_COUNTRY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DocumentSubType"
+      EntityAttrName="DocumentSubType"
+      EntityUsage="InvoiceEO"
+      AliasName="DOCUMENT_SUB_TYPE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SupplierTaxInvoiceNumber"
+      EntityAttrName="SupplierTaxInvoiceNumber"
+      EntityUsage="InvoiceEO"
+      AliasName="SUPPLIER_TAX_INVOICE_NUMBER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SupplierTaxInvoiceDate"
+      EntityAttrName="SupplierTaxInvoiceDate"
+      EntityUsage="InvoiceEO"
+      AliasName="SUPPLIER_TAX_INVOICE_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SupplierTaxExchangeRate"
+      EntityAttrName="SupplierTaxExchangeRate"
+      EntityUsage="InvoiceEO"
+      AliasName="SUPPLIER_TAX_EXCHANGE_RATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TaxInvoiceRecordingDate"
+      EntityAttrName="TaxInvoiceRecordingDate"
+      EntityUsage="InvoiceEO"
+      AliasName="TAX_INVOICE_RECORDING_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TaxInvoiceInternalSeq"
+      EntityAttrName="TaxInvoiceInternalSeq"
+      EntityUsage="InvoiceEO"
+      AliasName="TAX_INVOICE_INTERNAL_SEQ" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LegalEntityId"
+      EntityAttrName="LegalEntityId"
+      EntityUsage="InvoiceEO"
+      AliasName="LEGAL_ENTITY_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="HistoricalFlag"
+      EntityAttrName="HistoricalFlag"
+      EntityUsage="InvoiceEO"
+      AliasName="HISTORICAL_FLAG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ForceRevalidationFlag"
+      EntityAttrName="ForceRevalidationFlag"
+      EntityUsage="InvoiceEO"
+      AliasName="FORCE_REVALIDATION_FLAG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="BankChargeBearer"
+      EntityAttrName="BankChargeBearer"
+      EntityUsage="InvoiceEO"
+      AliasName="BANK_CHARGE_BEARER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="RemittanceMessage1"
+      EntityAttrName="RemittanceMessage1"
+      EntityUsage="InvoiceEO"
+      AliasName="REMITTANCE_MESSAGE1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="RemittanceMessage2"
+      EntityAttrName="RemittanceMessage2"
+      EntityUsage="InvoiceEO"
+      AliasName="REMITTANCE_MESSAGE2" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="RemittanceMessage3"
+      EntityAttrName="RemittanceMessage3"
+      EntityUsage="InvoiceEO"
+      AliasName="REMITTANCE_MESSAGE3" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="UniqueRemittanceIdentifier"
+      EntityAttrName="UniqueRemittanceIdentifier"
+      EntityUsage="InvoiceEO"
+      AliasName="UNIQUE_REMITTANCE_IDENTIFIER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="UriCheckDigit"
+      EntityAttrName="UriCheckDigit"
+      EntityUsage="InvoiceEO"
+      AliasName="URI_CHECK_DIGIT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SettlementPriority"
+      EntityAttrName="SettlementPriority"
+      EntityUsage="InvoiceEO"
+      AliasName="SETTLEMENT_PRIORITY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaymentReasonCode"
+      EntityAttrName="PaymentReasonCode"
+      EntityUsage="InvoiceEO"
+      AliasName="PAYMENT_REASON_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaymentReasonComments"
+      EntityAttrName="PaymentReasonComments"
+      EntityUsage="InvoiceEO"
+      AliasName="PAYMENT_REASON_COMMENTS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaymentMethodCode"
+      EntityAttrName="PaymentMethodCode"
+      EntityUsage="InvoiceEO"
+      AliasName="PAYMENT_METHOD_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DeliveryChannelCode"
+      EntityAttrName="DeliveryChannelCode"
+      EntityUsage="InvoiceEO"
+      AliasName="DELIVERY_CHANNEL_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="QuickPoHeaderId"
+      EntityAttrName="QuickPoHeaderId"
+      EntityUsage="InvoiceEO"
+      AliasName="QUICK_PO_HEADER_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="NetOfRetainageFlag"
+      EntityAttrName="NetOfRetainageFlag"
+      EntityUsage="InvoiceEO"
+      AliasName="NET_OF_RETAINAGE_FLAG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ReleaseAmountNetOfTax"
+      EntityAttrName="ReleaseAmountNetOfTax"
+      EntityUsage="InvoiceEO"
+      AliasName="RELEASE_AMOUNT_NET_OF_TAX" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ControlAmount"
+      EntityAttrName="ControlAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="CONTROL_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PartyId"
+      EntityAttrName="PartyId"
+      EntityUsage="InvoiceEO"
+      AliasName="PARTY_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PartySiteId"
+      EntityAttrName="PartySiteId"
+      EntityUsage="InvoiceEO"
+      AliasName="PARTY_SITE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PayProcTrxnTypeCode"
+      EntityAttrName="PayProcTrxnTypeCode"
+      EntityUsage="InvoiceEO"
+      AliasName="PAY_PROC_TRXN_TYPE_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PaymentFunction"
+      EntityAttrName="PaymentFunction"
+      EntityUsage="InvoiceEO"
+      AliasName="PAYMENT_FUNCTION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CustRegistrationCode"
+      EntityAttrName="CustRegistrationCode"
+      EntityUsage="InvoiceEO"
+      AliasName="CUST_REGISTRATION_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CustRegistrationNumber"
+      EntityAttrName="CustRegistrationNumber"
+      EntityUsage="InvoiceEO"
+      AliasName="CUST_REGISTRATION_NUMBER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PortOfEntryCode"
+      EntityAttrName="PortOfEntryCode"
+      EntityUsage="InvoiceEO"
+      AliasName="PORT_OF_ENTRY_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ExternalBankAccountId"
+      EntityAttrName="ExternalBankAccountId"
+      EntityUsage="InvoiceEO"
+      AliasName="EXTERNAL_BANK_ACCOUNT_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="VendorContactId"
+      EntityAttrName="VendorContactId"
+      EntityUsage="InvoiceEO"
+      AliasName="VENDOR_CONTACT_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="InternalContactEmail"
+      EntityAttrName="InternalContactEmail"
+      EntityUsage="InvoiceEO"
+      AliasName="INTERNAL_CONTACT_EMAIL" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DiscIsInvLessTaxFlag"
+      EntityAttrName="DiscIsInvLessTaxFlag"
+      EntityUsage="InvoiceEO"
+      AliasName="DISC_IS_INV_LESS_TAX_FLAG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ExcludeFreightFromDiscount"
+      EntityAttrName="ExcludeFreightFromDiscount"
+      EntityUsage="InvoiceEO"
+      AliasName="EXCLUDE_FREIGHT_FROM_DISCOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PayAwtGroupId"
+      EntityAttrName="PayAwtGroupId"
+      EntityUsage="InvoiceEO"
+      AliasName="PAY_AWT_GROUP_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="OriginalInvoiceAmount"
+      EntityAttrName="OriginalInvoiceAmount"
+      EntityUsage="InvoiceEO"
+      AliasName="ORIGINAL_INVOICE_AMOUNT" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DisputeReason"
+      EntityAttrName="DisputeReason"
+      EntityUsage="InvoiceEO"
+      AliasName="DISPUTE_REASON" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="RemitToSupplierName"
+      EntityAttrName="RemitToSupplierName"
+      EntityUsage="InvoiceEO"
+      AliasName="REMIT_TO_SUPPLIER_NAME" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="RemitToSupplierId"
+      EntityAttrName="RemitToSupplierId"
+      EntityUsage="InvoiceEO"
+      AliasName="REMIT_TO_SUPPLIER_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="RemitToSupplierSite"
+      EntityAttrName="RemitToSupplierSite"
+      EntityUsage="InvoiceEO"
+      AliasName="REMIT_TO_SUPPLIER_SITE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="RemitToSupplierSiteId"
+      EntityAttrName="RemitToSupplierSiteId"
+      EntityUsage="InvoiceEO"
+      AliasName="REMIT_TO_SUPPLIER_SITE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="RelationshipId"
+      EntityAttrName="RelationshipId"
+      EntityUsage="InvoiceEO"
+      AliasName="RELATIONSHIP_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PoMatchedFlag"
+      EntityAttrName="PoMatchedFlag"
+      EntityUsage="InvoiceEO"
+      AliasName="PO_MATCHED_FLAG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ValidationWorkerId"
+      EntityAttrName="ValidationWorkerId"
+      EntityUsage="InvoiceEO"
+      AliasName="VALIDATION_WORKER_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PayGroupLookupCode1"
+      EntityAttrName="PayGroupLookupCode1"
+      EntityUsage="InvoiceEO"
+      AliasName="PAY_GROUP_LOOKUP_CODE#1" >
+   </ViewAttribute>
+</ViewObject>

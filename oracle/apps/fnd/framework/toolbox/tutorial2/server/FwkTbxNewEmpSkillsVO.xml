@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: FwkTbxNewEmpSkillsVO.xml 120.0.12020000.1 2020/01/08 06:06:55 spunam noship $ -->
+
+<ViewObject
+   Name="FwkTbxNewEmpSkillsVO"
+   SelectList="FwkTbxNewEmpSkillsEO.SKILL_ID, 
+       FwkTbxNewEmpSkillsEO.EMPLOYEE_ID, 
+       FwkTbxNewEmpSkillsEO.SKILL_RATING, 
+       FwkTbxNewEmpSkillsEO.PROFICIENCY"
+   FromList="FWK_TBX_NEW_EMP_SKILLS FwkTbxNewEmpSkillsEO"
+   BindingStyle="OracleName"
+   CustomQuery="false"
+   RowClass="oracle.apps.fnd.framework.server.OAViewRowImpl"
+   ComponentClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkillsVOImpl"
+   UseGlueCode="false" >
+   <Properties>
+      <Property Name ="VO_ATTR.FwkTbxNewSkillsVO.VO_DATATYPE" Value ="Number" />
+      <Property Name ="VO_ATTR.FwkTbxNewSkillsVO.VO_QUALIFIED_NAME" Value ="Number" />
+   </Properties>
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <EntityUsage
+      Name="FwkTbxNewEmpSkillsEO"
+      Entity="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkillsEO" >
+      <DesignTime>
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="SkillId"
+      IsNotNull="true"
+      EntityAttrName="SkillId"
+      EntityUsage="FwkTbxNewEmpSkillsEO"
+      AliasName="SKILL_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EmployeeId"
+      IsNotNull="true"
+      EntityAttrName="EmployeeId"
+      EntityUsage="FwkTbxNewEmpSkillsEO"
+      AliasName="EMPLOYEE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SkillRating"
+      EntityAttrName="SkillRating"
+      EntityUsage="FwkTbxNewEmpSkillsEO"
+      AliasName="SKILL_RATING" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Proficiency"
+      EntityAttrName="Proficiency"
+      EntityUsage="FwkTbxNewEmpSkillsEO"
+      AliasName="PROFICIENCY" >
+   </ViewAttribute>
+   <ViewLinkAccessor
+      Name="FwkTbxNewSkillsVO"
+      ViewLink="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxEmpSkillsVL"
+      Type="oracle.jbo.RowIterator"
+      IsUpdateable="false" >
+   </ViewLinkAccessor>
+</ViewObject>

@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="region1" amDefName="oracle.apps.fnd.framework.toolbox.tutorial.server.InvoiceAM" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial.webui.bg_testCO">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:pageButtonBar id="region2">
+               <ui:contents>
+                  <oa:submitButton id="find" text="find" prompt="find"/>
+                  <oa:submitButton id="add" text="add" prompt="add"/>
+                  <oa:submitButton id="save" text="save" prompt="save"/>
+                  <oa:submitButton id="request" text="request" prompt="request"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+            <oa:header id="region3">
+               <ui:contents>
+                  <oa:table id="region4" width="100%" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial.webui.flexCO">
+                     <ui:contents>
+                        <oa:messageTextInput id="ID" viewName="Bg_testVO1" viewAttr="Id" prompt="ID"/>
+                        <oa:messageTextInput id="named" viewName="Bg_testVO1" viewAttr="Name" prompt="name"/>
+                        <oa:messageTextInput id="description" viewName="Bg_testVO1" viewAttr="Description" prompt="description"/>
+                        <oa:messageTextInput id="qty" viewName="Bg_testVO1" viewAttr="Qty" prompt="qty" dataType="NUMBER"/>
+                        <oa:flex id="DF" flexFieldAppShortName="SQLGL" flexStyle="key" flexName="GL#" prompt="code" viewName="Bg_testVO1"/>
+                        <oa:messageTextInput id="chartid" viewName="Bg_testVO1" viewAttr="ChartOfAccountsId" prompt="chart ID"/>
+                        <oa:messageTextInput id="codeid" viewName="Bg_testVO1" viewAttr="CodeId" prompt="code id"/>
+                     </ui:contents>
+                  </oa:table>
+               </ui:contents>
+            </oa:header>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

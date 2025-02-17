@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: FwkTbxNewEmpVO.xml 120.0.12020000.1 2020/01/08 06:41:52 spunam noship $ -->
+
+<ViewObject
+   Name="FwkTbxNewEmpVO"
+   SelectList="FwkTbxNewEmpEO.EMPLOYEE_ID, 
+       FwkTbxNewEmpEO.TITLE, 
+       FwkTbxNewEmpEO.FIRST_NAME, 
+       FwkTbxNewEmpEO.MIDDLE_NAMES, 
+       FwkTbxNewEmpEO.LAST_NAME, 
+       FwkTbxNewEmpEO.FULL_NAME, 
+       FwkTbxNewEmpEO.EMAIL_ADDRESS, 
+       FwkTbxNewEmpEO.GUID, 
+       FwkTbxNewEmpEO.MANAGER_ID, 
+       FwkTbxNewEmpEO.POSITION_CODE, 
+       FwkTbxNewEmpEO.SALARY, 
+       FwkTbxNewEmpEO.START_DATE, 
+       FwkTbxNewEmpEO.END_DATE, 
+       FwkTbxNewEmpEO.LAST_UPDATE_DATE, 
+       FwkTbxNewEmpEO.LAST_UPDATED_BY, 
+       FwkTbxNewEmpEO.CREATION_DATE, 
+       FwkTbxNewEmpEO.CREATED_BY, 
+       FwkTbxNewEmpEO.LAST_UPDATE_LOGIN, 
+       FwkTbxNewEmpEO.EMPLOYEE_TYPE, 
+       FwkTbxNewEmpEO.EMP_PHOTO"
+   FromList="FWK_TBX_NEW_EMPLOYEE FwkTbxNewEmpEO"
+   BindingStyle="OracleName"
+   CustomQuery="false"
+   RowClass="oracle.apps.fnd.framework.server.OAViewRowImpl"
+   ComponentClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpVOImpl"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <EntityUsage
+      Name="FwkTbxNewEmpEO"
+      Entity="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpEO" >
+      <DesignTime>
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="EmployeeId"
+      IsNotNull="true"
+      EntityAttrName="EmployeeId"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="EMPLOYEE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Title"
+      EntityAttrName="Title"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="TITLE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="FirstName"
+      EntityAttrName="FirstName"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="FIRST_NAME" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="MiddleNames"
+      EntityAttrName="MiddleNames"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="MIDDLE_NAMES" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastName"
+      EntityAttrName="LastName"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="LAST_NAME" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="FullName"
+      EntityAttrName="FullName"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="FULL_NAME" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EmailAddress"
+      EntityAttrName="EmailAddress"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="EMAIL_ADDRESS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Guid"
+      IsNotNull="true"
+      EntityAttrName="Guid"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="GUID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ManagerId"
+      EntityAttrName="ManagerId"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="MANAGER_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="PositionCode"
+      EntityAttrName="PositionCode"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="POSITION_CODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Salary"
+      EntityAttrName="Salary"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="SALARY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="StartDate"
+      EntityAttrName="StartDate"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="START_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EndDate"
+      EntityAttrName="EndDate"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="END_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateDate"
+      EntityAttrName="LastUpdateDate"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="LAST_UPDATE_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdatedBy"
+      IsNotNull="true"
+      EntityAttrName="LastUpdatedBy"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="LAST_UPDATED_BY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreationDate"
+      EntityAttrName="CreationDate"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="CREATION_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreatedBy"
+      IsNotNull="true"
+      EntityAttrName="CreatedBy"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="CREATED_BY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateLogin"
+      IsNotNull="true"
+      EntityAttrName="LastUpdateLogin"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="LAST_UPDATE_LOGIN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EmployeeType"
+      EntityAttrName="EmployeeType"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="EMPLOYEE_TYPE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EmpPhoto"
+      IsQueriable="false"
+      EntityAttrName="EmpPhoto"
+      EntityUsage="FwkTbxNewEmpEO"
+      AliasName="EMP_PHOTO" >
+   </ViewAttribute>
+</ViewObject>

@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!-- dbdrv: exec java oracle/jrad/tools/xml/importer XMLImporter.class java &phase=dat+24 checkfile:~PROD:~PATH:~FILE &fullpath:~PROD:~PATH:~FILE -username &un_apps -password &pw_apps -dbconnection &jdbc_db_addr -userId "1" -rootPackage /oracle/apps/~PROD -rootdir &fullpath:~PROD:mds:directory -->
+
+<oa:pageButtonBar version="10.1.3_" xml:lang="en-US" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:ui="http://xmlns.oracle.com/uix/ui" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header: FwkTbxNewEmpUpdPgNav.xml 120.0.12020000.1 2020/01/10 13:24:35 spunam noship $" controllerClass="oracle.apps.fnd.framework.toolbox.tutorial2.webui.FwkTbxNewEmpUpdPgNavCO">
+   <ui:contents>
+      <oa:submitButton id="CancelButton" use="/oracle/apps/fnd/attributesets/Buttons/Cancel" serverUnvalidated="true" unvalidated="true"/>
+      <oa:navigationBar id="NavBarRN" maxValue="4">
+         <ui:contents>
+            <oa:link id="BasicDetailLink" warnAboutChanges="false" destination="/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewEmpUpdProfilePG" text="Step One of Four: Basic Details"/>
+            <oa:link id="SkillUpdateLink" destination="/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewEmpUpdSkillPG" warnAboutChanges="false" text="Step Two of Four: Skill Update"/>
+            <oa:link id="RatingBarUpdateLink" destination="/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxNewEmpRatingBarUpdatePG" warnAboutChanges="false" text="Step Three of Four: Rating Bar"/>
+            <oa:link id="ReviewAndSaveLink" destination="/oracle/apps/fnd/framework/toolbox/tutorial2/webui/FwkTbxEmpUpdateReviewNSavePG" warnAboutChanges="false" text="Step Four of Four: Review And Save"/>
+         </ui:contents>
+      </oa:navigationBar>
+      <oa:submitButton id="SubmitButton" use="/oracle/apps/fnd/attributesets/Buttons/Submit"/>
+   </ui:contents>
+</oa:pageButtonBar>

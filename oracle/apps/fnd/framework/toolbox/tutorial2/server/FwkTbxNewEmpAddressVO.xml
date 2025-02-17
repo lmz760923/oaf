@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: FwkTbxNewEmpAddressVO.xml 120.0.12020000.1 2020/01/08 05:33:03 spunam noship $ -->
+
+<ViewObject
+   Name="FwkTbxNewEmpAddressVO"
+   SelectList="FwkTbxNewEmpAddressEO.ADDRESS_ID, 
+       FwkTbxNewEmpAddressEO.EMPLOYEE_ID, 
+       FwkTbxNewEmpAddressEO.DESK_NUMBER, 
+       FwkTbxNewEmpAddressEO.MOBILE_NUMBER, 
+       FwkTbxNewEmpAddressEO.TELEPHONE_NUMBER"
+   FromList="FWK_TBX_NEW_EMP_ADDRESS FwkTbxNewEmpAddressEO"
+   BindingStyle="OracleName"
+   CustomQuery="false"
+   RowClass="oracle.apps.fnd.framework.server.OAViewRowImpl"
+   ComponentClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAddressVOImpl"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <EntityUsage
+      Name="FwkTbxNewEmpAddressEO"
+      Entity="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAddressEO" >
+      <DesignTime>
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="AddressId"
+      IsUpdateable="while_insert"
+      IsNotNull="true"
+      EntityAttrName="AddressId"
+      EntityUsage="FwkTbxNewEmpAddressEO"
+      AliasName="ADDRESS_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EmployeeId"
+      IsNotNull="true"
+      EntityAttrName="EmployeeId"
+      EntityUsage="FwkTbxNewEmpAddressEO"
+      AliasName="EMPLOYEE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DeskNumber"
+      EntityAttrName="DeskNumber"
+      EntityUsage="FwkTbxNewEmpAddressEO"
+      AliasName="DESK_NUMBER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="MobileNumber"
+      EntityAttrName="MobileNumber"
+      EntityUsage="FwkTbxNewEmpAddressEO"
+      AliasName="MOBILE_NUMBER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TelephoneNumber"
+      EntityAttrName="TelephoneNumber"
+      EntityUsage="FwkTbxNewEmpAddressEO"
+      AliasName="TELEPHONE_NUMBER" >
+   </ViewAttribute>
+</ViewObject>

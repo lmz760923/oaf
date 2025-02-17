@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: FwkTbxNewEmpTrainingFk2Assoc.xml 120.0.12020000.1 2020/01/08 06:28:12 spunam noship $ -->
+
+<Association
+   Name="FwkTbxNewEmpTrainingFk2Assoc" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+   </DesignTime>
+   <AssociationEnd
+      Name="FwkTbxNewTrainingEO"
+      Cardinality="1"
+      Source="true"
+      Owner="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewTrainingEO" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewTrainingEO.TrainingId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_finderName" Value="FwkTbxNewTrainingEO" />
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_foreignKey" Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewTrainingEO.FwkTbxNewTrainingsPk" />
+         <Attr Name="_minCardinality" Value="1" />
+         <Attr Name="_isUpdateable" Value="true" />
+      </DesignTime>
+   </AssociationEnd>
+   <AssociationEnd
+      Name="FwkTbxNewEmpTrainingsEO"
+      Cardinality="-1"
+      Owner="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingsEO" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingsEO.TrainingId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_finderName" Value="FwkTbxNewEmpTrainingsEO" />
+         <Attr Name="_aggregation" Value="0" />
+         <Attr Name="_foreignKey" Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpTrainingsEO.FwkTbxNewEmpTrainingFk2" />
+         <Attr Name="_isUpdateable" Value="true" />
+      </DesignTime>
+   </AssociationEnd>
+</Association>

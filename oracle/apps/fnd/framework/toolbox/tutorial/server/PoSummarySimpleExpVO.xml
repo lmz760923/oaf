@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: PoSummarySimpleExpVO.xml 120.7 2005/07/12 11:12:55 atgops1 noship $ -->
+
+<ViewObject
+   Name="PoSummarySimpleExpVO"
+   BindingStyle="Oracle"
+   CustomQuery="true"
+   RowClass="oracle.apps.fnd.framework.toolbox.tutorial.server.PoSummarySimpleExpVORowImpl"
+   ComponentClass="oracle.apps.fnd.framework.toolbox.tutorial.server.PoSummarySimpleExpVOImpl"
+   FetchMode="FETCH_AS_NEEDED"
+   Passivate="None"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+select po.header_id AS ORDER_NUMBER,
+       po.description AS DESCRIPTION,
+       po.status_code AS STATUS_CODE,
+       po.supplier_id AS SUPPLIER_ID,
+       po.currency_code AS CURRENCY_CODE,
+       po.buyer_id AS BUYER_ID,
+       emp.full_name AS BUYER_NAME,
+       emp.email_address AS BUYER_EMAIL,
+       sup.name AS SUPPLIER_NAME,
+       lkp.meaning AS STATUS_DISPLAY,
+       (select sum(nvl(line.quantity, 0) * nvl(line.unit_price, 0))
+              from fwk_tbx_po_lines line
+              where line.header_id = po.header_id) AS ORDER_TOTAL,
+       po.creation_date AS CREATION_DATE
+from fwk_tbx_po_headers po,
+     fwk_tbx_suppliers sup,
+     fwk_tbx_employees emp,
+     fwk_tbx_lookup_codes_vl lkp
+where po.supplier_id = sup.supplier_id
+and   po.buyer_id = emp.employee_id
+and   po.status_code = lkp.lookup_code
+and   lkp.lookup_type = 'FWK_TBX_ORDER_STATUS'
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_isExpertMode" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll" />
+   </DesignTime>
+   <ViewAttribute
+      Name="OrderNumber"
+      IsPersistent="false"
+      IsNotNull="true"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="ORDER_NUMBER"
+      Expression="ORDER_NUMBER"
+      SQLType="NUMERIC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Description"
+      IsPersistent="false"
+      Precision="240"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="DESCRIPTION"
+      Expression="DESCRIPTION"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="240" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="StatusCode"
+      IsPersistent="false"
+      Precision="30"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="STATUS_CODE"
+      Expression="STATUS_CODE"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="30" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SupplierId"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="SUPPLIER_ID"
+      Expression="SUPPLIER_ID"
+      SQLType="NUMERIC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CurrencyCode"
+      IsPersistent="false"
+      Precision="30"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="CURRENCY_CODE"
+      Expression="CURRENCY_CODE"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="30" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="BuyerId"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="BUYER_ID"
+      Expression="BUYER_ID"
+      SQLType="NUMERIC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="BuyerName"
+      IsPersistent="false"
+      Precision="240"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="BUYER_NAME"
+      Expression="BUYER_NAME"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="240" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="BuyerEmail"
+      IsPersistent="false"
+      Precision="240"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="BUYER_EMAIL"
+      Expression="BUYER_EMAIL"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="240" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SupplierName"
+      IsPersistent="false"
+      Precision="80"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="SUPPLIER_NAME"
+      Expression="SUPPLIER_NAME"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="80" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="StatusDisplay"
+      IsPersistent="false"
+      IsNotNull="true"
+      Precision="80"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="STATUS_DISPLAY"
+      Expression="STATUS_DISPLAY"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="80" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="OrderTotal"
+      IsQueriable="false"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="ORDER_TOTAL"
+      Expression="NULL"
+      SQLType="NUMERIC" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreationDate"
+      IsPersistent="false"
+      IsNotNull="true"
+      Type="oracle.jbo.domain.Date"
+      ColumnType="DATE"
+      AliasName="CREATION_DATE"
+      Expression="CREATION_DATE"
+      SQLType="DATE" >
+   </ViewAttribute>
+</ViewObject>

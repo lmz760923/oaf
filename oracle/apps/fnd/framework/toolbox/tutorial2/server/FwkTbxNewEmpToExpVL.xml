@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: FwkTbxNewEmpToExpVL.xml 120.0.12020000.1 2020/01/08 06:17:28 spunam noship $ -->
+
+<ViewLink
+   Name="FwkTbxNewEmpToExpVL" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+   </DesignTime>
+   <ViewLinkDefEnd
+      Name="FwkTbxNewEmployeeVO"
+      Cardinality="1"
+      Owner="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmployeeVO"
+      Source="true" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmployeeVO.EmployeeId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_finderName" Value="FwkTbxNewEmployeeVO" />
+         <Attr Name="_isUpdateable" Value="true" />
+      </DesignTime>
+   </ViewLinkDefEnd>
+   <ViewLinkDefEnd
+      Name="FwkTbxNewExperienceVO"
+      Cardinality="-1"
+      Owner="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceVO" >
+      <AttrArray Name="Attributes">
+         <Item Value="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewExperienceVO.EmployeeId" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_finderName" Value="FwkTbxNewExperienceVO" />
+         <Attr Name="_isUpdateable" Value="true" />
+      </DesignTime>
+   </ViewLinkDefEnd>
+</ViewLink>

@@ -1,0 +1,25 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+ <!-- dbdrv: exec java oracle/jrad/tools/xml/importer XMLImporter.class java &phase=dat+24 checkfile:~PROD:~PATH:~FILE &fullpath:~PROD:~PATH:~FILE -username &un_apps -password &pw_apps -dbconnection &jdbc_db_addr -userId "1" -rootPackage /oracle/apps/~PROD -rootdir &fullpath:~PROD:mds:directory--> 
+
+<oa:messageComponentLayout version="10.1.3_" xml:lang="en-US" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:ui="http://xmlns.oracle.com/uix/ui" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header: FwkTbxNewEmpMailRegion.xml 120.0.12020000.2 2020/01/13 17:43:53 spunam noship $" amDefName="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmployeeAM" width="90%" fieldWidth="90%">
+   <ui:contents>
+      <oa:messageTextInput id="ToInputField" required="yes" prompt="To" rows="1" columns="25" translatableDefaultValue="" viewName="FwkTbxNewEmployeeVO1" viewAttr="EmailAddress"/>
+      <oa:messageTextInput id="Subject" prompt="Subject" columns="25"/>
+      <oa:messageRichTextEditor id="Body"/>
+      <oa:messageLayout id="ButtonsLayout">
+         <ui:contents>
+            <oa:rowLayout id="ButtonsTable" hAlign="start">
+               <ui:contents>
+                  <oa:button id="Close" text="Close" hAlign="end" use="/oracle/apps/fnd/attributesets/Buttons/Close"/>
+                  <oa:button id="Send" text="Send" prompt="Send"/>
+               </ui:contents>
+            </oa:rowLayout>
+         </ui:contents>
+      </oa:messageLayout>
+   </ui:contents>
+</oa:messageComponentLayout>

@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: FwkTbxNewEmpSkillsDetVO.xml 120.0.12020000.1 2020/01/08 06:03:32 spunam noship $ -->
+
+<ViewObject
+   Name="FwkTbxNewEmpSkillsDetVO"
+   BindingStyle="OracleName"
+   CustomQuery="true"
+   RowClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkillsDetVORowImpl"
+   ComponentClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpSkillsDetVOImpl"
+   FetchMode="FETCH_AS_NEEDED"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+select 
+FTNS.SKILL_ID,
+FTNES.EMPLOYEE_ID,
+FTNS.SKILL_NAME,     
+FTNES.SKILL_RATING,
+FTNES.PROFICIENCY,
+FTNS.VERSION,
+FTNS.BROAD_CATEGORY,
+FTNS.SKILL_CATEGORY
+FROM
+FWK_TBX_NEW_SKILLS FTNS,
+FWK_TBX_NEW_EMP_SKILLS FTNES
+WHERE FTNS.SKILL_ID=FTNES.SKILL_ID
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_isExpertMode" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <ViewAttribute
+      Name="SkillId"
+      IsPersistent="false"
+      IsNotNull="true"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="SKILL_ID"
+      Expression="SKILL_ID"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EmployeeId"
+      IsPersistent="false"
+      IsNotNull="true"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="EMPLOYEE_ID"
+      Expression="EMPLOYEE_ID"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SkillName"
+      IsPersistent="false"
+      IsNotNull="true"
+      Precision="60"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="SKILL_NAME"
+      Expression="SKILL_NAME"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="60" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SkillRating"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="SKILL_RATING"
+      Expression="SKILL_RATING"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Proficiency"
+      IsPersistent="false"
+      Precision="60"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="PROFICIENCY"
+      Expression="PROFICIENCY"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="60" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Version"
+      IsPersistent="false"
+      Precision="60"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="VERSION"
+      Expression="VERSION"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="60" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="BroadCategory"
+      IsPersistent="false"
+      Precision="100"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="BROAD_CATEGORY"
+      Expression="BROAD_CATEGORY"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="100" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SkillCategory"
+      IsPersistent="false"
+      Precision="100"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="SKILL_CATEGORY"
+      Expression="SKILL_CATEGORY"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="100" />
+      </DesignTime>
+   </ViewAttribute>
+</ViewObject>

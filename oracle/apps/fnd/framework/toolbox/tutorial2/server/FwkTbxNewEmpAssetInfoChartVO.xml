@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<!-- $Header: FwkTbxNewEmpAssetInfoChartVO.xml 120.0.12020000.1 2020/01/08 05:36:38 spunam noship $ -->
+
+<ViewObject
+   Name="FwkTbxNewEmpAssetInfoChartVO"
+   BindingStyle="OracleName"
+   CustomQuery="true"
+   RowClass="oracle.apps.fnd.framework.server.OAViewRowImpl"
+   ComponentClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAssetInfoChartVOImpl"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+select (select count(a.asset_type) from FWK_TBX_NEW_asset a where a.asset_type='Mobile Phone' and  to_char(a.in_use_since,'YYYY')<=to_char(b.in_use_since,'YYYY') and AVAILABLE='N'
+) phone_count,(select count(a.asset_type) from FWK_TBX_NEW_asset a where a.asset_type='MacBook' and  to_char(a.in_use_since,'YYYY')<=to_char(b.in_use_since,'YYYY') and AVAILABLE='N'
+) mac_count,(select count(a.asset_type) from FWK_TBX_NEW_asset a where a.asset_type='ThinkPad' and  to_char(a.in_use_since,'YYYY')<=to_char(b.in_use_since,'YYYY') and AVAILABLE='N'
+) thinkpad_count,(select count(a.asset_type) from FWK_TBX_NEW_asset a where a.asset_type='iPad' and  to_char(a.in_use_since,'YYYY')<=to_char(b.in_use_since,'YYYY') and AVAILABLE='N'
+) ipad_count,(select count(a.asset_type) from FWK_TBX_NEW_asset a where a.asset_type='Desk Phone' and  to_char(a.in_use_since,'YYYY')<=to_char(b.in_use_since,'YYYY') and AVAILABLE='N'
+)desk_phone_count,to_char(b.in_use_since,'YYYY') year from FWK_TBX_NEW_asset b
+group by to_char(b.in_use_since,'YYYY')
+order by to_char(b.in_use_since,'YYYY')
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isExpertMode" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <ViewAttribute
+      Name="PhoneCount"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="PHONE_COUNT"
+      Expression="PHONE_COUNT"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="MacCount"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="MAC_COUNT"
+      Expression="MAC_COUNT"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ThinkpadCount"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="THINKPAD_COUNT"
+      Expression="THINKPAD_COUNT"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IpadCount"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="IPAD_COUNT"
+      Expression="IPAD_COUNT"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DeskPhoneCount"
+      IsPersistent="false"
+      Type="oracle.jbo.domain.Number"
+      ColumnType="NUMBER"
+      AliasName="DESK_PHONE_COUNT"
+      Expression="DESK_PHONE_COUNT"
+      SQLType="NUMERIC" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="22" />
+      </DesignTime>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Year"
+      IsUpdateable="false"
+      IsPersistent="false"
+      Precision="4"
+      Type="java.lang.String"
+      ColumnType="VARCHAR2"
+      AliasName="YEAR"
+      Expression="YEAR"
+      SQLType="VARCHAR" >
+      <DesignTime>
+         <Attr Name="_DisplaySize" Value="4" />
+      </DesignTime>
+   </ViewAttribute>
+</ViewObject>

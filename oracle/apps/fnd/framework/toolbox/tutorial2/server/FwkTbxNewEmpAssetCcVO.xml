@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- +======================================================================+ -->
+<!-- |    Copyright (c) 2005, 2020 Oracle and/or its affiliates.           | -->
+<!-- |                         All rights reserved.                         | -->
+<!-- |                           Version 12.0.0                             | -->
+<!-- +======================================================================+ -->
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+<!-- $Header: FwkTbxNewEmpAssetCcVO.xml 120.0.12020000.1 2020/01/10 10:02:50 spunam noship $ -->
+<ViewObject
+   Name="FwkTbxNewEmpAssetCcVO"
+   BindingStyle="OracleName"
+   CustomQuery="true"
+   RowClass="oracle.apps.fnd.framework.server.OAViewRowImpl"
+   ComponentClass="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAssetCcVOImpl"
+   UseGlueCode="false" >
+   <SQLQuery><![CDATA[
+SELECT FwkTbxNewEmpAssetCcEO.SEGMENT1, 
+       FwkTbxNewEmpAssetCcEO.SEGMENT2, 
+       FwkTbxNewEmpAssetCcEO.SEGMENT3, 
+       FwkTbxNewEmpAssetCcEO.START_DATE_ACTIVE, 
+       FwkTbxNewEmpAssetCcEO.END_DATE_ACTIVE, 
+       FwkTbxNewEmpAssetCcEO.SUMMARY_FLAG, 
+       FwkTbxNewEmpAssetCcEO.ENABLED_FLAG, 
+       FwkTbxNewEmpAssetCcEO.ASSETNUMB_ID, 
+       FwkTbxNewEmpAssetCcEO.ASSETNUMB_STRUCTURE_ID, 
+       FwkTbxNewEmpAssetCcEO.CREATED_BY, 
+       FwkTbxNewEmpAssetCcEO.CREATION_DATE, 
+       FwkTbxNewEmpAssetCcEO.LAST_UPDATED_BY, 
+       FwkTbxNewEmpAssetCcEO.LAST_UPDATE_DATE, 
+       FwkTbxNewEmpAssetCcEO.LAST_UPDATE_LOGIN
+FROM ASSETNUMB_CC FwkTbxNewEmpAssetCcEO
+   ]]></SQLQuery>
+   <DesignTime>
+      <Attr Name="_isExpertMode" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <EntityUsage
+      Name="FwkTbxNewEmpAssetCcEO"
+      Entity="oracle.apps.fnd.framework.toolbox.tutorial2.server.FwkTbxNewEmpAssetCcEO" >
+      <DesignTime>
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Segment1"
+      EntityAttrName="Segment1"
+      EntityUsage="FwkTbxNewEmpAssetCcEO"
+      AliasName="SEGMENT1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Segment2"
+      EntityAttrName="Segment2"
+      EntityUsage="FwkTbxNewEmpAssetCcEO"
+      AliasName="SEGMENT2" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Segment3"
+      EntityAttrName="Segment3"
+      EntityUsage="FwkTbxNewEmpAssetCcEO"
+      AliasName="SEGMENT3" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="StartDateActive"
+      EntityAttrName="StartDateActive"
+      EntityUsage="FwkTbxNewEmpAssetCcEO"
+      AliasName="START_DATE_ACTIVE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EndDateActive"
+      EntityAttrName="EndDateActive"
+      EntityUsage="FwkTbxNewEmpAssetCcEO"
+      AliasName="END_DATE_ACTIVE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="SummaryFlag"
+      EntityAttrName="SummaryFlag"
+      EntityUsage="FwkTbxNewEmpAssetCcEO"
+      AliasName="SUMMARY_FLAG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="EnabledFlag"
+      EntityAttrName="EnabledFlag"
+      EntityUsage="FwkTbxNewEmpAssetCcEO"
+      AliasName="ENABLED_FLAG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AssetnumbId"
+      IsNotNull="true"
+      EntityAttrName="AssetnumbId"
+      EntityUsage="FwkTbxNewEmpAssetCcEO"
+      AliasName="ASSETNUMB_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="AssetnumbStructureId"
+      IsNotNull="true"
+      EntityAttrName="AssetnumbStructureId"
+      EntityUsage="FwkTbxNewEmpAssetCcEO"
+      AliasName="ASSETNUMB_STRUCTURE_ID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreatedBy"
+      EntityAttrName="CreatedBy"
+      EntityUsage="FwkTbxNewEmpAssetCcEO"
+      AliasName="CREATED_BY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreationDate"
+      EntityAttrName="CreationDate"
+      EntityUsage="FwkTbxNewEmpAssetCcEO"
+      AliasName="CREATION_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdatedBy"
+      IsNotNull="true"
+      EntityAttrName="LastUpdatedBy"
+      EntityUsage="FwkTbxNewEmpAssetCcEO"
+      AliasName="LAST_UPDATED_BY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateDate"
+      IsNotNull="true"
+      EntityAttrName="LastUpdateDate"
+      EntityUsage="FwkTbxNewEmpAssetCcEO"
+      AliasName="LAST_UPDATE_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateLogin"
+      EntityAttrName="LastUpdateLogin"
+      EntityUsage="FwkTbxNewEmpAssetCcEO"
+      AliasName="LAST_UPDATE_LOGIN" >
+   </ViewAttribute>
+   <AttrArray Name="KeyAttributes">
+      <Item Value="AssetnumbId" />
+   </AttrArray>
+</ViewObject>

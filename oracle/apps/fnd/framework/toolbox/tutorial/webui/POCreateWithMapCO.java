@@ -161,14 +161,14 @@ public class POCreateWithMapCO
                                             OAWebBean webBean)
   {
     OAScriptBean googleMapLibrary =
-      (OAScriptBean) createWebBean(pageContext,webBean, SCRIPT_BEAN);
+      (OAScriptBean) createWebBean(pageContext,/*webBean, */SCRIPT_BEAN);
     
     googleMapLibrary.setSource("http://maps.google.com/maps/api/js?sensor=true");
     webBean.addIndexedChild(googleMapLibrary);
 
 
     OAScriptBean jsScript =
-      (OAScriptBean) createWebBean(pageContext,webBean, SCRIPT_BEAN);
+      (OAScriptBean) createWebBean(pageContext,/*webBean,*/ SCRIPT_BEAN);
 
 
     StringBuffer jsScriptStr = new StringBuffer("");
@@ -191,7 +191,7 @@ public class POCreateWithMapCO
     webBean.addIndexedChild(jsScript);
 
     OAScriptBean showMapOnLoadJS =
-      (OAScriptBean) createWebBean(pageContext,webBean, SCRIPT_BEAN);
+      (OAScriptBean) createWebBean(pageContext,/*webBean, */SCRIPT_BEAN);
     showMapOnLoadJS.setText("createMap();");
 
     webBean.addIndexedChild(showMapOnLoadJS);

@@ -17,7 +17,7 @@
                   <oa:submitButton hAlign="end" shortDesc="Purchase Orders Search Page" id="ReturnLink" text="Back" prompt="Back" targetFrame="" destination="" viewName="PoDetailsFullExpVO1"/>
                </ui:contents>
             </oa:pageButtonBar>
-            <oa:subTabLayout id="VerticalTabs" orientation="vertical">
+            <oa:subTabLayout id="VerticalTabs" orientation="vertical" displayType="iconAndTextBelow">
                <ui:subTabs>
                   <oa:subTabBar id="SubTabBar">
                      <ui:contents>
@@ -144,7 +144,7 @@
             </oa:subTabLayout>
             <oa:hideShowSubTabLayout id="SliderRN" rendered="false">
                <ui:subTabLayout>
-                  <oa:subTabLayout id="SubTabLayoutRN" selectedIndex="999" orientation="vertical">
+                  <oa:subTabLayout id="SubTabLayoutRN" selectedIndex="999" orientation="vertical" displayType="iconAndTextBelow">
                      <ui:subTabs>
                         <oa:subTabBar id="SubTabBarRN">
                            <ui:contents>
